@@ -6,7 +6,7 @@ Este documento explica como adicionar novos reviews ao site com vídeos do YouTu
 
 Para cada novo produto, você precisará criar:
 
-1. **HTML**: `html/nomedoproduto.html`
+1. **HTML**: `reviews/nomedoproduto.html`
 2. **CSS**: `css/nomedoproduto.css`  
 3. **JS**: `js/nomedoproduto.js`
 4. **Imagem**: `images/nomedoproduto/PRODUTO1.jpg`

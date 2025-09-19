@@ -120,6 +120,29 @@ function trackReviewClick(reviewTitle) {
     // });
 }
 
+// Navigate to review page function
+window.navigateToReview = function(url) {
+    console.log(`Navigating to: ${url}`);
+    
+    // Try different approaches for navigation
+    try {
+        // First try: direct navigation
+        window.location.href = url;
+    } catch (error) {
+        console.error('Navigation error:', error);
+        
+        // Fallback: try with .html extension
+        try {
+            window.location.href = url + '.html';
+        } catch (fallbackError) {
+            console.error('Fallback navigation error:', fallbackError);
+            
+            // Last resort: alert user
+            alert(`Please navigate manually to: ${window.location.origin}/${url}`);
+        }
+    }
+};
+
 // Header scroll effect
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header');
@@ -254,8 +277,8 @@ function initSearchFunctionality() {
             name: 'Pure Moringa Supplement',
             description: 'Organic moringa leaf supplement for energy and wellness',
             category: 'Health & Supplements',
-            rating: 4.2,
-            url: 'reviews/puremoringa',
+            rating: 4.9,
+            url: 'reviews/puremoringa.html',
             icon: 'fas fa-leaf',
             keywords: ['moringa', 'supplement', 'organic', 'energy', 'health', 'wellness', 'superfood']
         },

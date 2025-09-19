@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Link Test - ReviewAndBuy</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 2rem auto; 
+            padding: 2rem; 
+            line-height: 1.6;
+        }
+        .test-button { 
+            display: inline-block; 
+            margin: 1rem; 
+            padding: 1rem 2rem; 
+            background: #2563eb; 
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .test-button:hover { background: #1d4ed8; }
+        .result { 
+            margin: 1rem 0; 
+            padding: 1rem; 
+            border-radius: 8px; 
+            background: #f8fafc;
+            border-left: 4px solid #10b981;
+        }
+        .error { border-left-color: #ef4444; background: #fef2f2; }
+    </style>
+</head>
+<body>
+    <h1>🔧 Teste Final de Navegação</h1>
+    
+    <p>Clique nos botões abaixo para testar a navegação:</p>
+    
+    <div>
+        <a href="reviews/puremoringa.html" class="test-button">
+            📄 Link Direto (.html)
+        </a>
+        
+        <button onclick="testJSNavigation()" class="test-button">
+            🔧 Teste JavaScript
+        </button>
+        
+        <button onclick="testWindowOpen()" class="test-button">
+            🆕 Nova Aba
+        </button>
+        
+        <a href="/" class="test-button">
+            🏠 Voltar Home
+        </a>
+    </div>
+    
+    <div id="results"></div>
+    
+    <div class="result">
+        <h3>📋 Status dos Arquivos:</h3>
+        <ul>
+            <li><strong>reviews/puremoringa.html:</strong> <span id="file-status">Verificando...</span></li>
+            <li><strong>URL atual:</strong> <span id="current-url"></span></li>
+            <li><strong>Base URL:</strong> <span id="base-url"></span></li>
+        </ul>
+    </div>
+    
+    <script>
+        // Show current URL info
+        document.getElementById('current-url').textContent = window.location.href;
+        document.getElementById('base-url').textContent = window.location.origin;
+        
+        // Test JavaScript navigation
+        function testJSNavigation() {
+            addResult('🔧 Testando navegação JavaScript...', false);
+            try {
+                window.location.href = 'reviews/puremoringa.html';
+            } catch (error) {
+                addResult('❌ Erro na navegação JavaScript: ' + error.message, true);
+            }
+        }
+        
+        // Test opening in new tab
+        function testWindowOpen() {
+            addResult('🆕 Abrindo em nova aba...', false);
+            try {
+                window.open('reviews/puremoringa.html', '_blank');
+                addResult('✅ Nova aba aberta com sucesso!', false);
+            } catch (error) {
+                addResult('❌ Erro ao abrir nova aba: ' + error.message, true);
+            }
+        }
+        
+        // Add result to page
+        function addResult(message, isError) {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = isError ? 'result error' : 'result';
+            div.innerHTML = `<p>${message}</p>`;
+            results.appendChild(div);
+        }
+        
+        // Test file existence
+        fetch('reviews/puremoringa.html')
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('file-status').textContent = '✅ Arquivo existe';
+                    document.getElementById('file-status').style.color = 'green';
+                } else {
+                    document.getElementById('file-status').textContent = '❌ Arquivo não encontrado (Status: ' + response.status + ')';
+                    document.getElementById('file-status').style.color = 'red';
+                }
+            })
+            .catch(error => {
+                document.getElementById('file-status').textContent = '❌ Erro ao verificar: ' + error.message;
+                document.getElementById('file-status').style.color = 'red';
+            });
+    </script>
+</body>
+</html>
