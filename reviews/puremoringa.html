@@ -32,8 +32,18 @@
     <!-- Review-specific styles -->
     <link rel="stylesheet" href="../css/puremoringa.css">
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Optimized font loading -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font Awesome with defer loading -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     
     <!-- Schema Markup for Rich Snippets -->
     <script type="application/ld+json">
@@ -166,7 +176,7 @@
             <header class="review-header">
                 <div class="product-intro">
                     <div class="product-image">
-                        <img src="../images/puremoringa/MORINGA1.jpg" alt="Pure Moringa Supplement Pills - 60 Capsules Bottle with 4.9 Star Rating" class="product-photo">
+                        <img src="../images/puremoringa/MORINGA1.jpg" alt="Pure Moringa Supplement Pills - 60 Capsules Bottle with 4.9 Star Rating" class="product-photo" loading="eager" width="400" height="400" decoding="async">
                     </div>
                     <div class="product-details">
                         <h1>Pure Moringa Supplement Review 2025: Complete Analysis & Benefits</h1>
@@ -205,16 +215,19 @@
             <section class="video-product-section">
                 <div class="video-product-container">
                     <div class="video-wrapper">
-                        <iframe 
-                            src="https://www.youtube.com/embed/IDN2xnbVgnM" 
-                            title="Pure Moringa Supplement Review Video" 
+                        <iframe
+                            src="https://www.youtube.com/embed/IDN2xnbVgnM"
+                            title="Pure Moringa Supplement Review Video"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen>
+                            allowfullscreen
+                            loading="lazy"
+                            width="560" 
+                            height="315">
                         </iframe>
                     </div>
                     <div class="product-image-large">
-                        <img src="../images/puremoringa/MORINGA1.jpg" alt="Pure Moringa Powder Capsules - Natural Energy & Immune Support Supplement" class="product-photo-large">
+                        <img src="../images/puremoringa/MORINGA1.jpg" alt="Pure Moringa Powder Capsules - Natural Energy & Immune Support Supplement" class="product-photo-large" loading="lazy" width="300" height="280" decoding="async">
                     </div>
                 </div>
             </section>
@@ -575,7 +588,26 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="../index.js"></script>
-    <script src="../js/puremoringa.js"></script>
+    <!-- Import JavaScript files with optimization -->
+    <script src="../index.js" defer></script>
+    <script src="../js/puremoringa.js" defer></script>
+    
+    <!-- Performance optimization script -->
+    <script>
+        // Optimize third-party resources
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('loaded');
+                }
+            });
+        });
+        
+        // Observe elements for lazy loading
+        document.addEventListener('DOMContentLoaded', () => {
+            const lazyElements = document.querySelectorAll('[loading="lazy"]');
+            lazyElements.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>

@@ -1,5 +1,42 @@
 /* Pure Moringa Review Specific Styles */
 
+/* Performance optimizations */
+* {
+    box-sizing: border-box;
+}
+
+/* Optimize font rendering */
+body {
+    font-display: swap;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* GPU acceleration for animations */
+.video-wrapper,
+.product-image-large,
+.conversion-btn,
+.rating-score {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize image loading */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reduce layout shifts */
+.video-wrapper {
+    aspect-ratio: 16 / 9;
+}
+
+.product-image-large {
+    aspect-ratio: 1 / 1;
+}
+
 /* Breadcrumb Navigation */
 .breadcrumb {
     display: flex;
