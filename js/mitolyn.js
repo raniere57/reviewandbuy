@@ -644,6 +644,14 @@ function loadRelatedReviews(currentReviewId) {
             description: 'Natural prostate support supplement with clinically-studied ingredients for urinary health',
             url: 'prostavive.html',
             icon: 'fas fa-shield-alt'
+        },
+        {
+            id: 'sleeplean',
+            name: 'Sleep Lean Weight Loss',
+            rating: 4.8,
+            description: 'Natural weight loss sleep supplement that targets blue light exposure and improves sleep quality',
+            url: 'sleeplean.html',
+            icon: 'fas fa-moon'
         }
     ];
     

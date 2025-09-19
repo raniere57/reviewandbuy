@@ -1,4 +1,4 @@
-// Pure Moringa Review Specific JavaScript
+// Sleep Lean Review Specific JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize review-specific features
     initProgressBars();
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initConversionTracking();
     initHeaderButton();
     
-    console.log('Pure Moringa review page initialized!');
+    console.log('Sleep Lean review page initialized!');
 });
 
 // Animate progress bars when they come into view
@@ -115,7 +115,7 @@ function initScrollIndicator() {
         
         .reading-progress-bar {
             height: 100%;
-            background: linear-gradient(90deg, #10b981, #059669);
+            background: linear-gradient(90deg, #6366f1, #4f46e5);
             width: 0%;
             transition: width 0.1s ease-out;
         }
@@ -144,7 +144,7 @@ document.querySelectorAll('.result-card').forEach(card => {
         icon.style.transform = 'scale(1.1) rotate(5deg)';
         
         // Pulse progress bar
-        progress.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.5)';
+        progress.style.boxShadow = '0 0 20px rgba(99, 102, 241, 0.5)';
         
         setTimeout(() => {
             icon.style.transform = 'scale(1) rotate(0deg)';
@@ -237,7 +237,7 @@ const verdictObserver = new IntersectionObserver(function(entries) {
             // Animate rating number
             if (ratingScore) {
                 let currentRating = 0;
-                const targetRating = 4.9;
+                const targetRating = 4.8;
                 const increment = targetRating / 30;
                 
                 const ratingAnimation = setInterval(() => {
@@ -314,7 +314,7 @@ function showNotification(message) {
         position: fixed;
         top: 100px;
         right: 20px;
-        background: #10b981;
+        background: #6366f1;
         color: white;
         padding: 1rem 2rem;
         border-radius: 8px;
@@ -350,7 +350,7 @@ function trackReviewInteraction(action, element) {
     // gtag('event', 'review_interaction', {
     //     'action': action,
     //     'element': element,
-    //     'review_name': 'Pure Moringa'
+    //     'review_name': 'Sleep Lean'
     // });
 }
 
@@ -426,7 +426,7 @@ function initVideoSection() {
         
         // Add click tracking to video wrapper
         videoWrapper.addEventListener('click', function() {
-            trackReviewInteraction('video_clicked', 'Pure Moringa Review Video');
+            trackReviewInteraction('video_clicked', 'Sleep Lean Review Video');
         });
     }
     
@@ -440,7 +440,7 @@ if (productPhoto) {
     productPhoto.addEventListener('click', function() {
         // Create lightbox effect
         createImageLightbox(this.src, this.alt);
-        trackReviewInteraction('product_image_clicked', 'Pure Moringa Product Photo Header');
+        trackReviewInteraction('product_image_clicked', 'Sleep Lean Product Photo Header');
     });
 }
 
@@ -448,7 +448,7 @@ if (productPhotoLarge) {
     productPhotoLarge.addEventListener('click', function() {
         // Create lightbox effect
         createImageLightbox(this.src, this.alt);
-        trackReviewInteraction('product_image_clicked', 'Pure Moringa Product Photo Large');
+        trackReviewInteraction('product_image_clicked', 'Sleep Lean Product Photo Large');
     });
 }
 
@@ -662,8 +662,8 @@ function trackAffiliateClick(buttonType, buttonText, position) {
         button_type: buttonType,
         button_text: buttonText,
         button_position: position,
-        product: 'Pure Moringa',
-        affiliate_link: 'https://mdrnremedy.com/#aff=raniere57',
+        product: 'Sleep Lean',
+        affiliate_link: 'https://a98b8momv211809rx7pgn4i913.hop.clickbank.net',
         timestamp: new Date().toISOString(),
         page_url: window.location.href,
         user_agent: navigator.userAgent
@@ -678,14 +678,14 @@ function trackAffiliateClick(buttonType, buttonText, position) {
     //         'button_type': buttonType,
     //         'button_text': buttonText,
     //         'button_position': position,
-    //         'product_name': 'Pure Moringa'
+    //         'product_name': 'Sleep Lean'
     //     });
     // }
     
     // Facebook Pixel Event (uncomment when FB Pixel is setup)
     // if (typeof fbq !== 'undefined') {
     //     fbq('track', 'Lead', {
-    //         content_name: 'Pure Moringa Review',
+    //         content_name: 'Sleep Lean Review',
     //         content_category: 'Supplement Review',
     //         value: 39.00,
     //         currency: 'USD'
@@ -706,8 +706,8 @@ function trackAffiliateClick(buttonType, buttonText, position) {
 setTimeout(() => {
     const discountBadges = document.querySelectorAll('.discount-badge');
     discountBadges.forEach(badge => {
-        if (badge.textContent.includes('80% OFF')) {
-            badge.textContent = '80% OFF - Limited Time!';
+        if (badge.textContent.includes('50% OFF')) {
+            badge.textContent = '50% OFF - Limited Time!';
             badge.style.animation = 'pulse 1s infinite';
         }
     });
@@ -730,12 +730,12 @@ function showExitIntentOffer() {
             <div class="exit-modal-content">
                 <button class="exit-modal-close">&times;</button>
                 <h2>Wait! Don't Miss Out!</h2>
-                <p>Get Pure Moringa with our <strong>60-day money-back guarantee</strong></p>
+                <p>Get Sleep Lean with our <strong>90-day money-back guarantee</strong></p>
                 <div class="exit-offer">
                     <span class="exit-price">$39</span>
                     <span class="exit-guarantee">Risk-Free Trial + FREE Shipping</span>
                 </div>
-                <a href="https://mdrnremedy.com/#aff=raniere57" target="_blank" class="exit-cta">
+                <a href="https://a98b8momv211809rx7pgn4i913.hop.clickbank.net" target="_blank" class="exit-cta">
                     Claim Your Discount Now
                 </a>
             </div>
@@ -788,7 +788,7 @@ function showExitIntentOffer() {
         .exit-price {
             font-size: 3rem;
             font-weight: 800;
-            color: #10b981;
+            color: #6366f1;
             display: block;
         }
         .exit-guarantee {
@@ -797,7 +797,7 @@ function showExitIntentOffer() {
         }
         .exit-cta {
             display: inline-block;
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
             color: white;
             padding: 1rem 2rem;
             border-radius: 50px;
@@ -947,5 +947,5 @@ function loadRelatedReviews(currentReviewId) {
 
 // Load related reviews when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    loadRelatedReviews('puremoringa');
+    loadRelatedReviews('sleeplean');
 });

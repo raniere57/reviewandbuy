@@ -316,6 +316,16 @@ function initSearchFunctionality() {
             keywords: ['prostavive', 'prostate', 'prostate health', 'urinary support', 'men\'s health', 'saw palmetto', 'male vitality', 'supplement', 'natural']
         },
         {
+            id: 'sleeplean',
+            name: 'Sleep Lean Weight Loss',
+            description: 'Natural weight loss sleep supplement that targets blue light exposure and improves sleep quality for better weight management',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/sleeplean.html',
+            icon: 'fas fa-moon',
+            keywords: ['sleep lean', 'weight loss', 'sleep supplement', 'blue light', 'sleep quality', 'natural weight loss', 'sleep aid', 'supplement', 'valerian', '5-htp']
+        },
+        {
             id: 'greensuperfood',
             name: 'Green Superfood Blend',
             description: 'Coming soon - Comprehensive green superfood powder',
