@@ -19,7 +19,7 @@ reviewandbuy/
 ├── index.css           # Main stylesheet
 ├── index.js            # Main JavaScript file
 ├── README.md           # Project documentation
-├── html/               # Individual review HTML files
+├── reviews/            # Individual review HTML files
 │   └── puremoringa.html
 ├── css/                # Individual review CSS files
 │   └── puremoringa.css
@@ -39,7 +39,7 @@ reviewandbuy/
 
 To add a new product review:
 
-1. **Create HTML file** in `/html/` folder (e.g., `newproduct.html`)
+1. **Create HTML file** in `/reviews/` folder (e.g., `newproduct.html`)
 2. **Create CSS file** in `/css/` folder (e.g., `newproduct.css`)
 3. **Create JS file** in `/js/` folder (e.g., `newproduct.js`)
 4. **Update homepage** to include link to the new review

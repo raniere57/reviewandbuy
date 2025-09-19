@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Test - ReviewAndBuy</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 2rem auto; 
+            padding: 2rem; 
+            line-height: 1.6;
+        }
+        .test-link { 
+            display: block; 
+            margin: 1rem 0; 
+            padding: 1rem; 
+            background: #f0f9ff; 
+            border-left: 4px solid #2563eb;
+            text-decoration: none;
+            color: #1e40af;
+        }
+        .test-link:hover { background: #e0f2fe; }
+        .status { margin-top: 2rem; padding: 1rem; border-radius: 8px; }
+        .success { background: #dcfce7; color: #166534; }
+        .info { background: #dbeafe; color: #1e40af; }
+    </style>
+</head>
+<body>
+    <h1>🔗 URL Structure Test</h1>
+    
+    <h2>Test Links (should work without .html extension):</h2>
+    <a href="/reviews/puremoringa" class="test-link">
+        ✅ /reviews/puremoringa (Clean URL)
+    </a>
+    
+    <a href="/reviews/puremoringa.html" class="test-link">
+        🔄 /reviews/puremoringa.html (Should redirect to clean URL)
+    </a>
+    
+    <a href="/" class="test-link">
+        🏠 / (Homepage)
+    </a>
+    
+    <div class="status info">
+        <h3>📋 How to Test:</h3>
+        <ol>
+            <li>Upload all files to your web server</li>
+            <li>Make sure the .htaccess file is in the root directory</li>
+            <li>Test the links above</li>
+            <li>The clean URLs should work without .html extension</li>
+            <li>The .html URLs should redirect to clean URLs (301 redirect)</li>
+        </ol>
+    </div>
+    
+    <div class="status success">
+        <h3>✅ Expected Behavior:</h3>
+        <ul>
+            <li><strong>reviewandbuy.site/reviews/puremoringa</strong> → Shows the review page</li>
+            <li><strong>reviewandbuy.site/reviews/puremoringa.html</strong> → Redirects to clean URL</li>
+            <li><strong>URLs are SEO-friendly</strong> and easier to remember</li>
+        </ul>
+    </div>
+    
+    <p><a href="/">&larr; Back to Homepage</a></p>
+</body>
+</html>

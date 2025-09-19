@@ -255,7 +255,7 @@ function initSearchFunctionality() {
             description: 'Organic moringa leaf supplement for energy and wellness',
             category: 'Health & Supplements',
             rating: 4.2,
-            url: 'html/puremoringa.html',
+            url: 'reviews/puremoringa',
             icon: 'fas fa-leaf',
             keywords: ['moringa', 'supplement', 'organic', 'energy', 'health', 'wellness', 'superfood']
         },

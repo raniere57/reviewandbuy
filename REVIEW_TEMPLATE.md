@@ -119,7 +119,7 @@ O JavaScript base já inclui:
 - [ ] Definir nome único para arquivos
 
 ### Criação dos Arquivos
-- [ ] Copiar `html/puremoringa.html` como template
+- [ ] Copiar `reviews/puremoringa.html` como template
 - [ ] Copiar `css/puremoringa.css` como template  
 - [ ] Copiar `js/puremoringa.js` como template
 - [ ] Criar pasta `images/nomedoproduto/`
