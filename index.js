@@ -122,25 +122,38 @@ function trackReviewClick(reviewTitle) {
 
 // Navigate to review page function
 window.navigateToReview = function(url) {
-    console.log(`Navigating to: ${url}`);
+    console.log(`Smart navigation to: ${url}`);
     
-    // Try different approaches for navigation
-    try {
-        // First try: direct navigation
-        window.location.href = url;
-    } catch (error) {
-        console.error('Navigation error:', error);
-        
-        // Fallback: try with .html extension
-        try {
-            window.location.href = url + '.html';
-        } catch (fallbackError) {
-            console.error('Fallback navigation error:', fallbackError);
-            
-            // Last resort: alert user
-            alert(`Please navigate manually to: ${window.location.origin}/${url}`);
-        }
-    }
+    // Test if clean URLs are supported
+    fetch(url, { method: 'HEAD' })
+        .then(response => {
+            if (response.ok) {
+                // Clean URL works, use it
+                console.log('✅ Clean URL supported, navigating...');
+                window.location.href = url;
+            } else {
+                // Clean URL doesn't work, try with .html
+                console.log('⚠️ Clean URL not supported, trying .html...');
+                return fetch(url + '.html', { method: 'HEAD' });
+            }
+        })
+        .then(response => {
+            if (response && response.ok) {
+                console.log('✅ .html URL works, navigating...');
+                window.location.href = url + '.html';
+            } else if (response) {
+                console.error('❌ Neither clean URL nor .html URL works');
+                // Force navigation anyway - let the server handle it
+                console.log('🔄 Forcing navigation to clean URL...');
+                window.location.href = url;
+            }
+        })
+        .catch(error => {
+            console.error('Navigation test failed:', error);
+            // Fallback to direct navigation attempt
+            console.log('🔄 Falling back to direct navigation...');
+            window.location.href = url;
+        });
 };
 
 // Header scroll effect
@@ -281,6 +294,16 @@ function initSearchFunctionality() {
             url: 'reviews/puremoringa.html',
             icon: 'fas fa-leaf',
             keywords: ['moringa', 'supplement', 'organic', 'energy', 'health', 'wellness', 'superfood']
+        },
+        {
+            id: 'mitolyn',
+            name: 'Mitolyn Weight Loss',
+            description: 'Revolutionary mitochondrial support supplement for natural weight loss and energy boost',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/mitolyn.html',
+            icon: 'fas fa-fire',
+            keywords: ['mitolyn', 'weight loss', 'mitochondrial', 'metabolism', 'fat burner', 'energy', 'supplement', 'natural']
         },
         {
             id: 'greensuperfood',
