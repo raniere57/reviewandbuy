@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
                     animateRating();
                     observer.unobserve(entry.target);
                 }
@@ -175,7 +175,7 @@ function loadRelatedReviews(currentReviewId) {
                     <p class="related-review-description">${review.description}</p>
                     <div class="related-review-cta">
                         Read Full Review <i class="fas fa-arrow-right"></i>
-                    </div>
+                </div>
                 </a>
             `;
         }).join('');
