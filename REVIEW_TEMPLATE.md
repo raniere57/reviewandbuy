@@ -2,47 +2,6 @@
 
 Este template serve como guia completo para criar novos reviews de produtos no ReviewAndBuy, incluindo todas as otimizações de SEO e performance implementadas.
 
-## 🏆 Lições Aprendidas (Pure Moringa + Mitolyn)
-
-### 🚨 REGRAS DE OURO - NUNCA ESQUECER:
-
-#### ✅ **CSS - SEMPRE COPIAR TUDO:**
-- **NUNCA** criar CSS do zero
-- **SEMPRE** copiar `css/puremoringa.css` COMPLETO
-- **APENAS** alterar a cor principal (`--product-primary`)
-- **VERIFICAR** se todas as seções têm containers estilizados
-
-#### ✅ **FOOTER - SEMPRE PADRONIZAR:**
-- **COPIAR** footer do Pure Moringa exatamente
-- **MANTER** estrutura `footer-section`
-- **INCLUIR** redes sociais completas
-- **VERIFICAR** se está idêntico ao padrão do site
-
-#### ✅ **FINAL VERDICT - ESTRUTURA CORRETA:**
-- **Seção externa**: Fundo escuro gradiente
-- **Título**: Dentro da seção, branco, centralizado
-- **Card interno**: SEM fundo branco (transparente)
-- **Rating box**: Com cor temática do produto
-- **Textos**: Cores claras para contraste no fundo escuro
-
-#### ✅ **CONTRASTE DE CORES:**
-- **Testar** legibilidade em fundos escuros
-- **Usar** cores claras (`#e2e8f0`, `#cbd5e1`, `white`) sobre fundos escuros
-- **Manter** identidade do produto nas cores principais
-- **Verificar** acessibilidade (WCAG compliance)
-
-#### ✅ **BOTÕES DE CONVERSÃO:**
-- **Manter** fundo branco com texto colorido (funciona melhor)
-- **Usar** cor temática do produto no texto
-- **Aplicar** efeitos hover sutis
-- **Testar** visualmente antes de finalizar
-
-#### ✅ **LINKS E NAVEGAÇÃO:**
-- **Usar** `.html` nos links do `index.html` e `index.js`
-- **Manter** consistência entre homepage e arquivos
-- **Testar** todos os links antes de publicar
-- **Verificar** se botão da homepage funciona
-
 ## 🎯 Estrutura Básica
 
 Para cada novo produto, você precisará criar:
@@ -90,14 +49,11 @@ Prepare uma imagem principal do produto:
 
 #### 1. HTML (`reviews/nomedoproduto.html`)
 
-**🚨 CRITICAL - Footer Padronização:**
-**SEMPRE copie o footer COMPLETO do `reviews/puremoringa.html`** - deve ser idêntico em todos os reviews.
-
 **Meta Tags e SEO:**
 ```html
 <title>Produto Review 2025: Complete Analysis & Benefits</title>
 <meta name="description" content="Produto review: 30-day test results, benefits, side effects. Rating from users. Product capsules for health.">
-<meta name="keywords" content="produto, supplement, review, benefits, health, extract, uses, produto buy, buy produto, produto com, produto get, produto org, produto bbb, try produto, produto 2025, produto scam, produto 2024, produto safe, produto pills, produto video, produto order, produto legit, produto label, produto price, produto works, is produto safe, produto amazon, what is produto, s produto legit, produto reviews, is produto legit, produto results, is produto a scam, reviews produto, does produto work, produto benefits, produto official, how to use produto">
+<meta name="keywords" content="produto, supplement, review, benefits, health, extract, uses">
 
 <!-- Open Graph -->
 <meta property="og:title" content="Produto Review 2025: Complete Analysis">
@@ -300,9 +256,6 @@ Prepare uma imagem principal do produto:
 - [ ] 🔍 Verificar se todas as seções têm containers
 - [ ] 📱 Manter responsividade mobile
 - [ ] 🎯 Testar visualmente se não há seções "soltas"
-- [ ] 🌈 **CORES**: Verificar contraste em fundos escuros
-- [ ] 👁️ **FINAL VERDICT**: Card interno SEM fundo branco
-- [ ] 🔗 **FOOTER**: Copiar estrutura exata do Pure Moringa
 
 #### 4. JavaScript (`js/nomedoproduto.js`)
 
@@ -412,45 +365,15 @@ Adicionar produto ao banco de dados:
 </url>
 ```
 
-## 🎨 Personalização Visual (Cores Temáticas)
+## 🎨 Personalização Visual (Opcional)
 
-### 🌈 **Cores por Categoria de Produto:**
-
-#### **Suplementos Verdes/Naturais:**
+Se quiser cores específicas para o produto:
 ```css
 :root {
-    --product-primary: #10b981; /* Verde */
+    --product-primary: #10b981; /* Verde para suplementos */
     --product-secondary: #059669;
     --product-accent: #34d399;
 }
-```
-
-#### **Queimadores de Gordura/Energia:**
-```css
-:root {
-    --mitolyn-primary: #ff6b35; /* Laranja/Vermelho */
-    --mitolyn-secondary: #e55a2b;
-    --mitolyn-accent: #ff8c5a;
-}
-```
-
-#### **Produtos Azuis/Tech:**
-```css
-:root {
-    --product-primary: #2563eb; /* Azul */
-    --product-secondary: #1d4ed8;
-    --product-accent: #60a5fa;
-}
-```
-
-### 🚨 **IMPORTANTE - Contraste em Final Verdict:**
-Quando usar fundo escuro (`linear-gradient(135deg, #1e293b, #334155)`), sempre usar:
-```css
-/* Textos claros sobre fundo escuro */
-.verdict-content .summary { color: #e2e8f0; }
-.recommendation h3 { color: white; }
-.recommendation p { color: #cbd5e1; }
-.buy-info p { color: #cbd5e1; }
 ```
 
 ## 📱 Teste Final
@@ -506,11 +429,6 @@ Antes de publicar:
 - [ ] Pros/Cons têm layout em grid
 - [ ] Mobile responsivo funciona
 - [ ] Links da homepage funcionam
-- [ ] **FOOTER**: Idêntico ao Pure Moringa (4 seções + redes sociais)
-- [ ] **FINAL VERDICT**: Fundo escuro + textos claros + card transparente
-- [ ] **BOTÕES**: Fundo branco + texto colorido (não gradiente)
-- [ ] **CONTRASTE**: Todos os textos legíveis em seus fundos
-- [ ] **NAVEGAÇÃO**: Botão da homepage funciona perfeitamente
 
 ---
 
@@ -520,20 +438,4 @@ Antes de publicar:
 - Otimize para mobile-first
 - Foque em conversão com botões estratégicos
 - Use estudos científicos quando disponíveis
-
-### 🎯 **RESUMO DAS 5 REGRAS MAIS IMPORTANTES:**
-
-1. **🎨 CSS**: SEMPRE copiar `css/puremoringa.css` COMPLETO (nunca criar do zero)
-2. **🔗 FOOTER**: SEMPRE copiar footer do Pure Moringa EXATO (4 seções + redes sociais)
-3. **🌈 CORES**: Verificar contraste - textos claros em fundos escuros
-4. **👁️ FINAL VERDICT**: Card interno transparente (sem fundo branco duplo)
-5. **🔗 LINKS**: Usar `.html` nos links e testar botão da homepage
-
-### ⚠️ **ERROS MAIS COMUNS A EVITAR:**
-- ❌ Criar CSS do zero (sempre gera problemas)
-- ❌ Footer diferente do padrão (quebra consistência)
-- ❌ Texto escuro em fundo escuro (ilegível)
-- ❌ Dupla seção no Final Verdict (visual confuso)
-- ❌ Links quebrados da homepage (navegação falha)
-
-**🚀 Seguindo estas regras, o review sairá perfeito na primeira vez!**
+- **CRÍTICO:** Sempre copie CSS completo do Pure Moringa como base

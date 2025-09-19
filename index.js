@@ -306,6 +306,16 @@ function initSearchFunctionality() {
             keywords: ['mitolyn', 'weight loss', 'mitochondrial', 'metabolism', 'fat burner', 'energy', 'supplement', 'natural']
         },
         {
+            id: 'prostavive',
+            name: 'Prostavive Prostate Support',
+            description: 'Natural prostate support supplement with clinically-studied ingredients for urinary health and male vitality',
+            category: 'Health & Supplements',
+            rating: 4.7,
+            url: 'reviews/prostavive.html',
+            icon: 'fas fa-shield-alt',
+            keywords: ['prostavive', 'prostate', 'prostate health', 'urinary support', 'men\'s health', 'saw palmetto', 'male vitality', 'supplement', 'natural']
+        },
+        {
             id: 'greensuperfood',
             name: 'Green Superfood Blend',
             description: 'Coming soon - Comprehensive green superfood powder',

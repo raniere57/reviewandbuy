@@ -1196,4 +1196,129 @@ img {
     .rating-score {
         font-size: 3rem;
     }
+    
+    .related-reviews-section {
+        padding: 3rem 0;
+    }
+    
+    .related-reviews-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .related-reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Related Reviews Section */
+.related-reviews-section {
+    background: #f8fafc;
+    padding: 4rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.related-reviews-section h2 {
+    text-align: center;
+    color: #1e293b;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.related-reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.related-review-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.related-review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.related-review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.related-review-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.related-review-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+}
+
+.related-review-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.related-review-stars {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.related-review-stars i {
+    color: #fbbf24;
+    font-size: 0.9rem;
+}
+
+.related-review-rating span {
+    font-weight: 600;
+    color: #374151;
+}
+
+.related-review-description {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.related-review-cta {
+    color: #10b981;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.related-review-cta i {
+    transition: transform 0.3s ease;
+}
+
+.related-review-card:hover .related-review-cta i {
+    transform: translateX(4px);
 }

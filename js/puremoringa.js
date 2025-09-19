@@ -872,3 +872,72 @@ function initHeaderButton() {
         headerBtn.style.transition = 'all 0.4s ease-out';
     }
 }
+
+// Function to load related reviews dynamically
+function loadRelatedReviews(currentReviewId) {
+    // Database of all reviews
+    const allReviews = [
+        {
+            id: 'puremoringa',
+            name: 'Pure Moringa Supplement',
+            rating: 4.9,
+            description: 'Organic moringa leaf supplement for energy and wellness with 27 vitamins and minerals',
+            url: 'puremoringa.html',
+            icon: 'fas fa-leaf'
+        },
+        {
+            id: 'mitolyn',
+            name: 'Mitolyn Weight Loss',
+            rating: 4.8,
+            description: 'Revolutionary mitochondrial support supplement for natural weight loss and energy boost',
+            url: 'mitolyn.html',
+            icon: 'fas fa-fire'
+        },
+        {
+            id: 'prostavive',
+            name: 'Prostavive Prostate Support',
+            rating: 4.7,
+            description: 'Natural prostate support supplement with clinically-studied ingredients for urinary health',
+            url: 'prostavive.html',
+            icon: 'fas fa-shield-alt'
+        }
+    ];
+    
+    // Filter out current review and get up to 3 others
+    const relatedReviews = allReviews
+        .filter(review => review.id !== currentReviewId)
+        .slice(0, 3);
+    
+    // Generate HTML for related reviews
+    const container = document.getElementById('related-reviews-container');
+    if (container && relatedReviews.length > 0) {
+        container.innerHTML = relatedReviews.map(review => {
+            return `
+                <a href="${review.url}" class="related-review-card">
+                    <div class="related-review-header">
+                        <div class="related-review-icon">
+                            <i class="${review.icon}"></i>
+                        </div>
+                        <h3 class="related-review-title">${review.name}</h3>
+                    </div>
+                    <div class="related-review-rating">
+                        <div class="related-review-stars">
+                            ${'<i class="fas fa-star"></i>'.repeat(Math.floor(review.rating))}
+                            ${review.rating % 1 ? '<i class="fas fa-star-half-alt"></i>' : ''}
+                        </div>
+                        <span>${review.rating}/5</span>
+                    </div>
+                    <p class="related-review-description">${review.description}</p>
+                    <div class="related-review-cta">
+                        Read Full Review <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            `;
+        }).join('');
+    }
+}
+
+// Load related reviews when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadRelatedReviews('puremoringa');
+});
