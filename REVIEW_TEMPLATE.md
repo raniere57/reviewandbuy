@@ -11,6 +11,15 @@ Para cada novo produto, você precisará criar:
 3. **JS**: `js/nomedoproduto.js`
 4. **Imagem**: `images/nomedoproduto/PRODUTO1.jpg`
 
+## 🔄 Sistema de Herança de Anúncios
+
+**IMPORTANTE**: Todos os reviews agora usam um sistema de herança automática para anúncios do Google Ads. Isso significa que:
+
+- ✅ **Anúncios são herdados automaticamente** do `index.html`
+- ✅ **Manutenção centralizada** - mudanças só precisam ser feitas no `js/components.js`
+- ✅ **Consistência garantida** - todos os reviews terão a mesma estrutura de anúncios
+- ✅ **Performance otimizada** - carregamento eficiente dos anúncios
+
 ## 📹 Vídeo do YouTube
 
 Cada review deve incluir um vídeo do YouTube relacionado ao produto:
@@ -75,6 +84,10 @@ Prepare uma imagem principal do produto:
 <!-- Carregamento otimizado de fontes -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+
+<!-- Google Ads (OBRIGATÓRIO para sistema de herança) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8182694361964802"
+     crossorigin="anonymous"></script>
 ```
 
 **Imagens Otimizadas:**
@@ -265,6 +278,58 @@ Prepare uma imagem principal do produto:
 - Modificar exit-intent modal com nome e preço
 - Atualizar Facebook Pixel `content_name`
 
+#### 5. Sistema de Herança de Anúncios
+
+**Scripts Obrigatórios (adicionar no final do HTML):**
+```html
+<!-- Scripts -->
+<!-- Import JavaScript files with optimization -->
+<script src="../js/components.js" defer></script>  <!-- OBRIGATÓRIO - Sistema de herança -->
+<script src="../index.js" defer></script>
+<script src="../js/nomedoproduto.js" defer></script>
+```
+
+**⚠️ ORDEM CRÍTICA**: O `components.js` DEVE ser carregado ANTES dos outros scripts para funcionar corretamente.
+
+**Como Funciona:**
+1. O `components.js` detecta automaticamente os sidebars com placeholders
+2. Substitui os placeholders pelos anúncios do Google Ads
+3. Inicializa as funcionalidades de navegação
+4. Carrega os anúncios automaticamente
+
+**Estrutura dos Sidebars (manter exatamente assim):**
+```html
+<!-- Main Content with Sidebars -->
+<main class="main-content">
+    <!-- Left Sidebar for Ads (inherited) -->
+    <aside class="sidebar-left">
+        <div class="ad-space">
+            <div class="ad-placeholder">
+                <i class="fas fa-ad"></i>
+                <p>Advertisement Space</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Review Content -->
+    <article class="review-content">
+        <!-- Seu conteúdo aqui -->
+    </article>
+
+    <!-- Right Sidebar for Ads (inherited) -->
+    <aside class="sidebar-right">
+        <div class="ad-space">
+            <div class="ad-placeholder">
+                <i class="fas fa-ad"></i>
+                <p>Advertisement Space</p>
+            </div>
+        </div>
+    </aside>
+</main>
+```
+
+**⚠️ IMPORTANTE**: NÃO altere a estrutura dos sidebars. O sistema de herança substitui automaticamente os placeholders pelos anúncios reais.
+
 ```javascript
 // Rating animation
 const targetRating = 4.9; // ALTERAR AQUI
@@ -303,6 +368,13 @@ function showExitIntentOffer() {
 - [ ] Fontes com carregamento otimizado
 - [ ] Scripts com defer
 - [ ] Vídeo com lazy loading
+
+### Sistema de Herança de Anúncios
+- [ ] Script do Google Ads adicionado no `<head>`
+- [ ] `components.js` carregado ANTES dos outros scripts
+- [ ] Estrutura dos sidebars mantida exatamente como no template
+- [ ] Placeholders "Advertisement Space" não alterados
+- [ ] Teste visual: anúncios aparecem nos sidebars
 
 ### Schema Markup
 - [ ] Product schema configurado
