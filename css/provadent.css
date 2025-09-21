@@ -1,4 +1,4 @@
-/* Pure Moringa Review Specific Styles */
+/* ProvaDent Review Specific Styles */
 
 /* Performance optimizations */
 * {
@@ -14,8 +14,6 @@ body {
 }
 
 /* GPU acceleration for animations */
-.video-wrapper,
-.product-image-large,
 .conversion-btn,
 .rating-score {
     will-change: transform;
@@ -35,6 +33,13 @@ img {
 
 .product-image-large {
     aspect-ratio: 1 / 1;
+}
+
+/* ProvaDent Color Variables */
+:root {
+    --product-primary: #0891b2; /* Cyan-600 for dental health theme */
+    --product-secondary: #0e7490; /* Cyan-700 */
+    --product-accent: #22d3ee; /* Cyan-400 */
 }
 
 /* Breadcrumb Navigation */
@@ -70,7 +75,7 @@ img {
 
 /* Review Header */
 .review-header {
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, #0891b2, #0e7490);
     color: white;
     border-radius: 20px;
     padding: 3rem;
@@ -88,14 +93,10 @@ img {
 .product-image {
     width: 120px;
     height: 120px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .product-image i {
@@ -107,8 +108,10 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
     transition: transform 0.3s ease;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
 }
 
 .product-photo:hover {
@@ -149,14 +152,18 @@ img {
     font-size: 1.1rem;
     font-weight: 600;
     margin-left: 0.5rem;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .rating-text {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--product-primary);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: none;
 }
 
 .review-date,
@@ -198,7 +205,7 @@ img {
 
 .header-official-btn:hover {
     background: rgba(255, 255, 255, 0.9);
-    color: #10b981;
+    color: #0891b2;
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -224,7 +231,7 @@ img {
     border-radius: 16px;
     padding: 2.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    border-left: 5px solid #10b981;
+    border-left: 5px solid var(--product-primary);
 }
 
 .summary-card h2 {
@@ -256,21 +263,21 @@ img {
 }
 
 .point.positive {
-    background: #f0fdf4;
-    color: #166534;
+    background: #ecfeff;
+    color: #0e7490;
 }
 
 .point.positive i {
-    color: #16a34a;
+    color: #0891b2;
 }
 
 .point.negative {
-    background: #fef2f2;
-    color: #991b1b;
+    background: #ecfeff;
+    color: #0e7490;
 }
 
 .point.negative i {
-    color: #dc2626;
+    color: #0891b2;
 }
 
 /* Video and Product Image Section */
@@ -311,12 +318,7 @@ img {
 }
 
 .product-image-large {
-    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
-    border-radius: 20px;
-    padding: 1.5rem;
     text-align: center;
-    border: 2px solid #e2e8f0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 280px; /* Reduced height to match video */
     display: flex;
@@ -334,10 +336,11 @@ img {
     max-width: 220px; /* Reduced size */
     max-height: 240px; /* Reduced height for smaller container */
     object-fit: contain;
-    border-radius: 16px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
 }
 
 .product-photo-large:hover {
@@ -351,12 +354,12 @@ img {
 }
 
 .conversion-card {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
     border-radius: 20px;
     padding: 2.5rem;
     text-align: center;
     color: white;
-    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 12px 40px rgba(8, 145, 178, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
@@ -375,16 +378,16 @@ img {
 
 .conversion-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 20px 60px rgba(8, 145, 178, 0.4);
 }
 
 .conversion-card.secondary {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    box-shadow: 0 12px 40px rgba(16, 185, 129, 0.3);
+    background: linear-gradient(135deg, #22d3ee 0%, #0891b2 100%);
+    box-shadow: 0 12px 40px rgba(34, 211, 238, 0.3);
 }
 
 .conversion-card.secondary:hover {
-    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 20px 60px rgba(34, 211, 238, 0.4);
 }
 
 .conversion-content {
@@ -434,7 +437,7 @@ img {
 }
 
 .discount-badge {
-    background: #ef4444;
+    background: #22d3ee;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 25px;
@@ -449,7 +452,7 @@ img {
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    color: #10b981;
+    color: #22d3ee;
     font-weight: 700;
     font-size: 1rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
@@ -536,15 +539,15 @@ img {
 }
 
 .conversion-btn.final {
-    background: linear-gradient(135deg, #fbbf24, #f59e0b);
-    color: #1e293b;
+    background: linear-gradient(135deg, #22d3ee, #0891b2);
+    color: white;
     border: none;
     font-size: 1.4rem;
     padding: 2rem 4rem;
 }
 
 .conversion-btn.final:hover {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
+    background: linear-gradient(135deg, #0891b2, #0e7490);
     transform: translateY(-5px) scale(1.02);
 }
 
@@ -567,7 +570,7 @@ img {
     color: #1e293b;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid var(--product-primary);
     padding-bottom: 0.5rem;
 }
 
@@ -588,7 +591,7 @@ img {
     background: #f8fafc;
     padding: 1.5rem;
     border-radius: 12px;
-    border-left: 4px solid #10b981;
+    border-left: 4px solid var(--product-primary);
 }
 
 .nutrient-category h4 {
@@ -601,7 +604,7 @@ img {
 }
 
 .nutrient-category h4 i {
-    color: #10b981;
+    color: var(--product-primary);
     font-size: 1.2rem;
 }
 
@@ -620,7 +623,7 @@ img {
 
 .nutrient-category li::before {
     content: '•';
-    color: #10b981;
+    color: var(--product-primary);
     font-weight: bold;
     position: absolute;
     left: 0;
@@ -639,7 +642,7 @@ img {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, #10b981, #059669);
+    background: linear-gradient(to bottom, var(--product-primary), var(--product-secondary));
 }
 
 .timeline-item {
@@ -652,7 +655,7 @@ img {
     left: -2rem;
     width: 30px;
     height: 30px;
-    background: #10b981;
+    background: var(--product-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -708,17 +711,17 @@ img {
 }
 
 .pros {
-    background: #f0fdf4;
-    border: 2px solid #bbf7d0;
+    background: #ecfeff;
+    border: 2px solid #a7f3d0;
 }
 
 .cons {
-    background: #fef2f2;
-    border: 2px solid #fecaca;
+    background: #ecfeff;
+    border: 2px solid #a7f3d0;
 }
 
 .pros h3 {
-    color: #166534;
+    color: #0e7490;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -726,7 +729,7 @@ img {
 }
 
 .cons h3 {
-    color: #991b1b;
+    color: #0e7490;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -750,7 +753,7 @@ img {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #16a34a;
+    color: #0891b2;
     font-weight: bold;
 }
 
@@ -758,7 +761,7 @@ img {
     content: '✗';
     position: absolute;
     left: 0;
-    color: #dc2626;
+    color: #0891b2;
     font-weight: bold;
 }
 
@@ -781,13 +784,13 @@ img {
 
 .result-card:hover {
     transform: translateY(-3px);
-    border-color: #10b981;
+    border-color: var(--product-primary);
 }
 
 .result-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, var(--product-primary), var(--product-secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -816,7 +819,7 @@ img {
 
 .progress {
     height: 100%;
-    background: linear-gradient(90deg, #10b981, #059669);
+    background: linear-gradient(90deg, var(--product-primary), var(--product-secondary));
     border-radius: 4px;
     transition: width 0.3s ease;
 }
@@ -842,8 +845,8 @@ img {
 }
 
 .safety-card.mild {
-    background: #fffbeb;
-    border-color: #fed7aa;
+    background: #ecfeff;
+    border-color: #a7f3d0;
 }
 
 .safety-card.warning {
@@ -859,7 +862,7 @@ img {
 }
 
 .safety-card.mild h3 {
-    color: #92400e;
+    color: #0e7490;
 }
 
 .safety-card.warning h3 {
@@ -920,7 +923,7 @@ img {
     font-weight: 700;
     display: block;
     margin-bottom: 1rem;
-    color: #10b981;
+    color: var(--product-primary);
 }
 
 .verdict-rating .stars {
@@ -928,8 +931,8 @@ img {
 }
 
 .verdict-rating .rating-text {
-    background: rgba(16, 185, 129, 0.2);
-    color: #10b981;
+    background: rgba(8, 145, 178, 0.2);
+    color: var(--product-primary);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: 600;
@@ -954,7 +957,7 @@ img {
 }
 
 .recommendation h3 {
-    color: #10b981;
+    color: var(--product-primary);
     margin-bottom: 1rem;
 }
 
@@ -964,10 +967,10 @@ img {
 }
 
 .buy-info {
-    background: rgba(16, 185, 129, 0.1);
+    background: rgba(8, 145, 178, 0.1);
     padding: 1rem;
     border-radius: 8px;
-    border-left: 4px solid #10b981;
+    border-left: 4px solid var(--product-primary);
     margin-bottom: 0;
 }
 
@@ -1009,7 +1012,7 @@ img {
 
 .related-card:hover {
     transform: translateY(-3px);
-    border-color: #10b981;
+    border-color: var(--product-primary);
 }
 
 .related-image {
@@ -1065,6 +1068,131 @@ img {
     .verdict-rating {
         max-width: 300px;
         margin: 0 auto;
+    }
+}
+
+/* ProvaDent Article Section */
+.provadent-article-section {
+    background: linear-gradient(135deg, #f0fdfa 0%, #ccfbf1 100%);
+    padding: 4rem 0;
+    margin: 3rem 0;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.provadent-article-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tooth" x="0" y="0" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M12.5 2c-2 0-4 2-4 4v2c0 1 1 2 2 2h4c1 0 2-1 2-2V6c0-2-2-4-4-4z" fill="%230891b2" opacity="0.1"/><path d="M12.5 8c-1 0-2 1-2 2v8c0 1 1 2 2 2s2-1 2-2v-8c0-1-1-2-2-2z" fill="%230891b2" opacity="0.05"/></pattern></defs><rect width="100" height="100" fill="url(%23tooth)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.article-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.provadent-article-section h2 {
+    color: #1e293b;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.3;
+    background: linear-gradient(135deg, #0891b2, #0e7490);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.article-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ccfbf1;
+    position: relative;
+}
+
+.article-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0891b2, #0e7490, #06b6d4);
+    border-radius: 16px 16px 0 0;
+}
+
+.article-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.article-content p:last-child {
+    margin-bottom: 0;
+}
+
+.article-content strong {
+    color: #0891b2;
+    font-weight: 600;
+    background: linear-gradient(135deg, #0891b2, #0e7490);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive Design for Article Section */
+@media (max-width: 768px) {
+    .provadent-article-section {
+        padding: 2rem 0;
+        margin: 2rem 0;
+    }
+    
+    .article-container {
+        padding: 0 1rem;
+    }
+    
+    .provadent-article-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .article-content {
+        padding: 2rem;
+    }
+    
+    .article-content p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .provadent-article-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .article-content {
+        padding: 1.5rem;
+    }
+    
+    .article-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
     }
 }
 
@@ -1263,7 +1391,7 @@ img {
 .related-review-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, var(--product-primary), var(--product-secondary));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1308,7 +1436,7 @@ img {
 }
 
 .related-review-cta {
-    color: #10b981;
+    color: var(--product-primary);
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -1321,129 +1449,4 @@ img {
 
 .related-review-card:hover .related-review-cta i {
     transform: translateX(4px);
-}
-
-/* Moringa Article Section */
-.moringa-article-section {
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    padding: 4rem 0;
-    margin: 3rem 0;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.moringa-article-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="leaf" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10 2c-2 0-4 2-4 4s2 4 4 4 4-2 4-4-2-4-4-4zm0 6c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z" fill="%23a7f3d0" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23leaf)"/></svg>');
-    opacity: 0.3;
-    pointer-events: none;
-}
-
-.article-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    position: relative;
-    z-index: 1;
-}
-
-.moringa-article-section h2 {
-    color: #1e293b;
-    font-size: 2.2rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    line-height: 1.3;
-    background: linear-gradient(135deg, #059669, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.article-content {
-    background: white;
-    padding: 3rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e2e8f0;
-    position: relative;
-}
-
-.article-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #059669, #10b981, #34d399);
-    border-radius: 16px 16px 0 0;
-}
-
-.article-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #374151;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-
-.article-content p:last-child {
-    margin-bottom: 0;
-}
-
-.article-content strong {
-    color: #059669;
-    font-weight: 600;
-    background: linear-gradient(135deg, #059669, #10b981);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* Responsive Design for Article Section */
-@media (max-width: 768px) {
-    .moringa-article-section {
-        padding: 2rem 0;
-        margin: 2rem 0;
-    }
-    
-    .article-container {
-        padding: 0 1rem;
-    }
-    
-    .moringa-article-section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
-    }
-    
-    .article-content {
-        padding: 2rem;
-    }
-    
-    .article-content p {
-        font-size: 1rem;
-        text-align: left;
-    }
-}
-
-@media (max-width: 480px) {
-    .moringa-article-section h2 {
-        font-size: 1.6rem;
-    }
-    
-    .article-content {
-        padding: 1.5rem;
-    }
-    
-    .article-content p {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
 }
