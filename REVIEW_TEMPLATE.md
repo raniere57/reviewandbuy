@@ -64,6 +64,9 @@ Prepare uma imagem principal do produto:
 <meta name="description" content="Produto review: 30-day test results, benefits, side effects. Rating from users. Product capsules for health.">
 <meta name="keywords" content="produto, supplement, review, benefits, health, extract, uses">
 
+<!-- Google AdSense Account (OBRIGATÓRIO) -->
+<meta name="google-adsense-account" content="ca-pub-8182694361964802">
+
 <!-- Open Graph -->
 <meta property="og:title" content="Produto Review 2025: Complete Analysis">
 <meta property="og:description" content="Honest produto review with test results and benefits.">
@@ -357,6 +360,7 @@ function showExitIntentOffer() {
 - [ ] Title otimizado com ano atual
 - [ ] Description com palavras-chave principais
 - [ ] Keywords relevantes incluídas
+- [ ] **Google AdSense Account meta tag adicionada (OBRIGATÓRIO)**
 - [ ] Open Graph completo
 - [ ] Twitter Cards configurados
 - [ ] URL canônica definida
