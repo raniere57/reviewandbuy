@@ -449,6 +449,16 @@ function initSearchFunctionality() {
             url: '#',
             icon: 'fas fa-leaf',
             keywords: ['chlorella', 'powder', 'supplement', 'detox', 'health', 'green']
+        },
+        {
+            id: 'finessa',
+            name: 'Finessa Digestive Health',
+            description: 'Digestive support for gut-liver axis, regularity and bloating relief',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/finessa.html',
+            icon: 'fas fa-heart',
+            keywords: ['finessa', 'digestive health', 'gut health', 'liver health', 'regularity', 'bloating relief', 'gut-liver axis', 'prebiotic fiber', 'probiotics', 'polyphenols', 'milk thistle', 'silymarin', 'dandelion', 'inulin', 'cascara sagrada', 'artichoke', 'turmeric', 'licorice extract', 'digestive supplement', 'constipation relief', 'smooth digestion', 'colon health', 'bile flow', 'microbiome balance', 'natural digestion support']
         }
     ];
     
