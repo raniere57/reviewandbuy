@@ -79,11 +79,12 @@ Criar reviews idênticos em estrutura e UX, mudando apenas: paleta do produto, m
 
 ### 🧠 Conteúdo e palavras‑chave (SEO)
 - H1: `[Produto] Review 2025: Complete Analysis & Benefits`
-- Título editorial da seção artigo (H2): "[Produto] Review: [Top Problem/Benefit Keyword]?"
-- Misture termos de topo de funil (o que é, benefícios, como funciona) e fundo de funil (comprar, preço, oficial, funciona, é bom, efeitos, resultados).
+- Título da seção artigo (H2): “`[Produto] Review: [Benefit/Problem Keyword]`”
+- Misture termos de pesquisa amplos (o que é, como funciona, benefícios) e termos de decisão (preço, oficial, funciona, é bom, resultados) de forma NATURAL no texto. Não mencione “topo” ou “fundo de funil” explicitamente ao leitor.
+- Seção artigo: mantenha 4–5 parágrafos curtos, cobrindo: contexto do problema, proposta do produto, como funciona, para quem é, por que importa. Realce termos importantes com **negrito** quando fizer sentido.
 - Quick Summary: 3 positivos + 1 negativo.
-- Ingredientes: 3 colunas com ícones, focando benefícios práticos.
-- Resultados: 3 cards com barras (porcentagens realistas e consistentes entre seções).
+- Ingredientes/benefícios: 3 colunas com ícones, focando resultados práticos.
+- Resultados: 3 cards com barras.
 
 ---
 

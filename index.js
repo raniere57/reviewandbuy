@@ -469,6 +469,26 @@ function initSearchFunctionality() {
             url: 'reviews/yusleep.html',
             icon: 'fas fa-moon',
             keywords: ['yusleep','sleep support','deep sleep','fall asleep faster','stay asleep','nighttime awakenings','circadian rhythm','non-habit forming','calm mind','wake refreshed','sleep hygiene','natural sleep aid']
+        },
+        {
+            id: 'leanbiome',
+            name: 'LeanBiome Gut-Weight',
+            description: 'Gut-centric weight support for cravings control and metabolic alignment',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/leanbiome.html',
+            icon: 'fas fa-bolt',
+            keywords: ['leanbiome','gut microbiome','weight support','cravings control','metabolism','probiotics','prebiotics','appetite','natural weight loss']
+        },
+        {
+            id: 'sugardefender',
+            name: 'Sugar Defender Blood Sugar',
+            description: 'Natural blood sugar support for healthy glucose and steady energy',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/sugardefender.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['sugar defender','blood sugar','glucose support','insulin sensitivity','energy','cravings control','daily balance','natural formula']
         }
     ];
     
