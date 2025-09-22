@@ -368,7 +368,7 @@ function loadRelatedReviews() {
             name: 'Pineal Guardian',
             description: 'Natural pineal gland support supplement with plant-based ingredients for better sleep and melatonin production.',
             rating: 4.7,
-            url: 'reviews/pinealguardian.html',
+            url: './pinealguardian.html',
             icon: 'fas fa-moon'
         },
         {
@@ -376,7 +376,7 @@ function loadRelatedReviews() {
             name: 'Quietum Plus',
             description: 'Natural tinnitus relief supplement with plant-based ingredients for ear health and hearing support.',
             rating: 4.8,
-            url: 'reviews/quietumplus.html',
+            url: './quietumplus.html',
             icon: 'fas fa-volume-mute'
         },
         {
@@ -384,7 +384,7 @@ function loadRelatedReviews() {
             name: 'HepatoBurn',
             description: 'Liver purification and fat-burning supplement with proprietary complexes for weight loss.',
             rating: 4.6,
-            url: 'reviews/hepatoburn.html',
+            url: './hepatoburn.html',
             icon: 'fas fa-fire'
         },
         {
@@ -392,7 +392,7 @@ function loadRelatedReviews() {
             name: 'Audifort',
             description: 'Andrew Ross hearing health supplement with 20+ natural ingredients for ear wellness.',
             rating: 4.7,
-            url: 'reviews/audifort.html',
+            url: './audifort.html',
             icon: 'fas fa-ear-listen'
         },
         {
@@ -400,7 +400,7 @@ function loadRelatedReviews() {
             name: 'Joint Genesis',
             description: 'Dr. Weis joint health supplement with Mobilee® and hyaluronan for flexible joints.',
             rating: 4.8,
-            url: 'reviews/jointgenesis.html',
+            url: './jointgenesis.html',
             icon: 'fas fa-bone'
         },
         {
@@ -408,7 +408,7 @@ function loadRelatedReviews() {
             name: 'ProDentim',
             description: 'Dr. Drew Sutton oral probiotic with 3.5B CFU for healthy teeth and gums.',
             rating: 4.9,
-            url: 'reviews/prodentim.html',
+            url: './prodentim.html',
             icon: 'fas fa-tooth'
         },
         {
@@ -416,7 +416,7 @@ function loadRelatedReviews() {
             name: 'ProstaVive',
             description: 'Prostate health supplement with saw palmetto and beta-sitosterol.',
             rating: 4.7,
-            url: 'reviews/prostavive.html',
+            url: './prostavive.html',
             icon: 'fas fa-male'
         },
         {
@@ -424,7 +424,7 @@ function loadRelatedReviews() {
             name: 'Mitolyne',
             description: 'Mitochondrial support supplement for cellular energy and vitality.',
             rating: 4.5,
-            url: 'reviews/mitolyn.html',
+            url: './mitolyn.html',
             icon: 'fas fa-bolt'
         },
         {
@@ -432,7 +432,7 @@ function loadRelatedReviews() {
             name: 'Pure Moringa',
             description: 'Natural superfood powder with 90+ nutrients for overall wellness.',
             rating: 4.4,
-            url: 'reviews/puremoringa.html',
+            url: './puremoringa.html',
             icon: 'fas fa-leaf'
         }
     ];
