@@ -288,3 +288,58 @@ Adicionar ao `sitemap.xml`:
 - Conferir `canonical`, OG/Twitter e `lastmod` no sitemap
 - Validar lazy loading e dimensões de imagens para evitar CLS
 - Rodar busca na homepage pelo nome do produto e keywords chave
+
+---
+
+### ⚙️ Inicialização JavaScript (evitar falhas de timing)
+Use um entrypoint robusto que executa mesmo se o script carregar após o DOM estar pronto:
+```javascript
+(function initEntrypoint(){
+  const init = () => {
+    initProgressBars();
+    initTimelineAnimations();
+    initRatingAnimations(4.8); // ajuste por produto
+    initVideoSection('[Produto] Review Video');
+    initConversionTracking();
+    initHeaderButton();
+    initMobileMenu();
+    loadRelatedReviews('[produto]');
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+```
+
+### 🔗 Paths de Related Reviews
+Como os reviews ficam em `reviews/`, use links RELATIVOS ao arquivo atual:
+```javascript
+{ id: 'javaburn', url: './javaburn.html' }
+// e assim por diante para todos os reviews
+```
+
+### 📱 Menu Mobile do Review
+Implemente o toggle mesmo se o HTML já estiver no DOM:
+```javascript
+function initMobileMenu(){
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  if (navToggle && navMenu) {
+    const newToggle = navToggle.cloneNode(true);
+    navToggle.parentNode.replaceChild(newToggle, navToggle);
+    newToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.classList.toggle('active');
+      newToggle.classList.toggle('active');
+    });
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        newToggle.classList.remove('active');
+      });
+    });
+  }
+}
+```

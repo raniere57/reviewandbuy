@@ -459,6 +459,16 @@ function initSearchFunctionality() {
             url: 'reviews/finessa.html',
             icon: 'fas fa-heart',
             keywords: ['finessa', 'digestive health', 'gut health', 'liver health', 'regularity', 'bloating relief', 'gut-liver axis', 'prebiotic fiber', 'probiotics', 'polyphenols', 'milk thistle', 'silymarin', 'dandelion', 'inulin', 'cascara sagrada', 'artichoke', 'turmeric', 'licorice extract', 'digestive supplement', 'constipation relief', 'smooth digestion', 'colon health', 'bile flow', 'microbiome balance', 'natural digestion support']
+        },
+        {
+            id: 'yusleep',
+            name: 'YuSleep Natural Sleep',
+            description: 'Natural sleep support for deep, restorative sleep and calmer nights',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/yusleep.html',
+            icon: 'fas fa-moon',
+            keywords: ['yusleep','sleep support','deep sleep','fall asleep faster','stay asleep','nighttime awakenings','circadian rhythm','non-habit forming','calm mind','wake refreshed','sleep hygiene','natural sleep aid']
         }
     ];
     
