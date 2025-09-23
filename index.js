@@ -599,6 +599,16 @@ function initSearchFunctionality() {
             url: 'reviews/thyrafemmebalance.html',
             icon: 'fas fa-heart',
             keywords: ['thyrafemme balance','thyroid support','female hormonal balance','hormone support','energy boost','mood support','metabolism support','women thyroid','thyrafemme review','thyrafemme price','thyrafemme buy','thyrafemme official','thyrafemme ingredients','thyrafemme side effects','thyrafemme results','thyrafemme legit','thyrafemme works']
+        },
+        {
+            id: 'renew',
+            name: 'Renew',
+            description: 'Natural wellness support for daily energy balance and metabolism',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/renew.html',
+            icon: 'fas fa-leaf',
+            keywords: ['renew','renew supplement','wellness support','energy balance','metabolism support','daily wellness','natural supplement','renew review','renew price','renew buy','renew official','renew ingredients','renew side effects','renew results','renew legit','renew works']
         }
     ];
     
