@@ -1,6 +1,17 @@
 // ReviewAndBuy Components - Sistema de Herança
 // Este arquivo gerencia componentes reutilizáveis para as páginas de review
 
+(function ensureFavicon(){
+  const rels=['icon','shortcut icon','apple-touch-icon'];
+  const href='/favicon.svg';
+  const head=document.head;
+  if(!head) return;
+  const has=Array.from(document.querySelectorAll('link[rel]')).some(l=>rels.includes(l.getAttribute('rel')));
+  if(!has){
+    rels.forEach(rel=>{ const link=document.createElement('link'); link.rel=rel; link.href=href; link.type='image/svg+xml'; head.appendChild(link); });
+  }
+})();
+
 class ComponentInheritance {
     constructor() {
         this.components = {

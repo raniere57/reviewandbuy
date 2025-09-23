@@ -579,6 +579,26 @@ function initSearchFunctionality() {
             url: 'reviews/neuroquiet.html',
             icon: 'fas fa-volume-mute',
             keywords: ['neuro quiet','tinnitus relief','ear health','tinnitus support','tinnitus','ear comfort','ear wellness','tinnitus supplement','ear support','tinnitus relief','ear health supplement','tinnitus relief','neuro quiet review','neuro quiet price','neuro quiet buy','neuro quiet official','neuro quiet ingredients','neuro quiet side effects','neuro quiet results','neuro quiet legit','neuro quiet works']
+        },
+        {
+            id: 'sumatraslimbellytonic',
+            name: 'Sumatra Slim Belly Tonic',
+            description: 'Natural weight loss tonic for belly fat reduction and metabolism boost',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/sumatraslimbellytonic.html',
+            icon: 'fas fa-fire',
+            keywords: ['sumatra slim belly tonic','sumatra tonic','weight loss tonic','belly fat reduction','metabolism boost','weight loss supplement','belly fat','weight management','fat burning','natural weight loss','belly fat loss','metabolism support','weight loss formula','sumatra tonic review','sumatra tonic price','sumatra tonic buy','sumatra tonic official','sumatra tonic ingredients','sumatra tonic side effects','sumatra tonic results','sumatra tonic legit','sumatra tonic works']
+        },
+        {
+            id: 'thyrafemmebalance',
+            name: 'ThyraFemme Balance',
+            description: 'Female hormonal and thyroid support for energy, mood and metabolism',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/thyrafemmebalance.html',
+            icon: 'fas fa-heart',
+            keywords: ['thyrafemme balance','thyroid support','female hormonal balance','hormone support','energy boost','mood support','metabolism support','women thyroid','thyrafemme review','thyrafemme price','thyrafemme buy','thyrafemme official','thyrafemme ingredients','thyrafemme side effects','thyrafemme results','thyrafemme legit','thyrafemme works']
         }
     ];
     
