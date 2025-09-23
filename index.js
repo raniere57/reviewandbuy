@@ -559,6 +559,26 @@ function initSearchFunctionality() {
             url: 'reviews/neuroprime.html',
             icon: 'fas fa-brain',
             keywords: ['neuro prime','brain health supplement','cognitive function','memory enhancement','brain health','mental clarity','brain fog','cognitive support','memory support','brain supplement','mental performance','brain function','neuro prime review','neuro prime price','neuro prime buy','neuro prime official','neuro prime ingredients','neuro prime side effects','neuro prime results','neuro prime legit','neuro prime works']
+        },
+        {
+            id: 'balmorex',
+            name: 'Balmorex',
+            description: 'Natural joint pain relief support for mobility and comfort enhancement',
+            category: 'Health & Supplements',
+            rating: 4.7,
+            url: 'reviews/balmorex.html',
+            icon: 'fas fa-bone',
+            keywords: ['balmorex','joint pain relief','joint health','mobility support','joint pain','joint comfort','joint flexibility','joint supplement','joint support','mobility enhancement','joint health supplement','joint pain relief','balmorex review','balmorex price','balmorex buy','balmorex official','balmorex ingredients','balmorex side effects','balmorex results','balmorex legit','balmorex works']
+        },
+        {
+            id: 'neuroquiet',
+            name: 'Neuro Quiet',
+            description: 'Natural tinnitus relief support for ear health and quiet comfort',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/neuroquiet.html',
+            icon: 'fas fa-volume-mute',
+            keywords: ['neuro quiet','tinnitus relief','ear health','tinnitus support','tinnitus','ear comfort','ear wellness','tinnitus supplement','ear support','tinnitus relief','ear health supplement','tinnitus relief','neuro quiet review','neuro quiet price','neuro quiet buy','neuro quiet official','neuro quiet ingredients','neuro quiet side effects','neuro quiet results','neuro quiet legit','neuro quiet works']
         }
     ];
     
