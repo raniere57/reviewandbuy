@@ -1,15 +1,15 @@
-// Liv Pure Review Specific JavaScript
+// Neuro Surge Review Specific JavaScript
 
 (function initEntrypoint(){
     const init = () => {
         initProgressBars();
         initTimelineAnimations();
-        initRatingAnimations(4.8);
-        initVideoSection('Liv Pure Weight Loss Review Video');
+        initRatingAnimations(4.7);
+        initVideoSection('Neuro Surge Brain Health Review Video');
         initConversionTracking();
         initHeaderButton();
         initMobileMenu();
-        loadRelatedReviews('livpure');
+        loadRelatedReviews('neurosurge');
     };
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
@@ -70,7 +70,7 @@ function initConversionTracking(){
 }
 
 function trackAffiliateClick(buttonType, buttonText, position){
-    console.log('Affiliate Click Tracked:', {buttonType,buttonText,position,product:'Liv Pure',affiliate_link:'https://hop.clickbank.net/?vendor=livpure&affiliate=raniere57&lid=235060',timestamp:new Date().toISOString(),page_url:window.location.href,user_agent:navigator.userAgent});
+    console.log('Affiliate Click Tracked:', {buttonType,buttonText,position,product:'Neuro Surge',affiliate_link:'https://a53f1nocwa648632mmv7vfqp7e.hop.clickbank.net',timestamp:new Date().toISOString(),page_url:window.location.href,user_agent:navigator.userAgent});
 }
 
 function showExitIntentOffer(){
@@ -80,12 +80,12 @@ function showExitIntentOffer(){
         <div class="exit-modal-content">
             <button class="exit-modal-close">&times;</button>
             <h2>Wait! Don't Miss Out!</h2>
-            <p>Get <strong>Liv Pure</strong> with our <strong>money-back guarantee</strong></p>
+            <p>Get <strong>Neuro Surge</strong> with our <strong>money-back guarantee</strong></p>
             <div class="exit-offer">
                 <span class="exit-price">$49</span>
                 <span class="exit-guarantee">Risk-Free + Selected FREE Shipping</span>
             </div>
-            <a href="https://hop.clickbank.net/?vendor=livpure&affiliate=raniere57&lid=235060" target="_blank" class="exit-cta">Claim Your Discount Now</a>
+            <a href="https://a53f1nocwa648632mmv7vfqp7e.hop.clickbank.net" target="_blank" class="exit-cta">Claim Your Discount Now</a>
         </div>
     </div>`;
     const style=document.createElement('style'); style.textContent=`
@@ -133,7 +133,8 @@ function loadRelatedReviews(currentId){
         {id:'yusleep',name:'YuSleep',rating:4.7,description:'Natural sleep support and relaxation.',url:'./yusleep.html',icon:'fas fa-bed'},
         {id:'leanbiome',name:'LeanBiome',rating:4.5,description:'Gut health and weight management support.',url:'./leanbiome.html',icon:'fas fa-fire'},
         {id:'igenics',name:'Igenics',rating:4.7,description:'Eye health and vision clarity support.',url:'./igenics.html',icon:'fas fa-eye'},
-        {id:'nagano-tonic',name:'Nagano Tonic',rating:4.6,description:'Natural weight loss and metabolism support.',url:'./nagano-tonic.html',icon:'fas fa-fire'}
+        {id:'nagano-tonic',name:'Nagano Tonic',rating:4.6,description:'Natural weight loss and metabolism support.',url:'./nagano-tonic.html',icon:'fas fa-fire'},
+        {id:'livpure',name:'Liv Pure',rating:4.8,description:'Liver health and weight loss support.',url:'./livpure.html',icon:'fas fa-leaf'}
     ];
     const related=all.filter(r=>r.id!==currentId).slice(0,3);
     const container=document.getElementById('related-reviews-container'); if(!container) return;

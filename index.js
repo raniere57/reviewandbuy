@@ -519,6 +519,46 @@ function initSearchFunctionality() {
             url: 'reviews/livpure.html',
             icon: 'fas fa-leaf',
             keywords: ['liv pure','weight loss','liver health','fat burning','natural weight loss','liver support','weight management','liver function','fat loss','liver detox','weight loss formula']
+        },
+        {
+            id: 'neurosurge',
+            name: 'Neuro Surge Brain Health',
+            description: 'Natural brain health supplement for cognitive function and mental clarity',
+            category: 'Health & Supplements',
+            rating: 4.7,
+            url: 'reviews/neurosurge.html',
+            icon: 'fas fa-brain',
+            keywords: ['neuro surge','brain health','cognitive function','mental clarity','brain supplement','focus enhancement','brain support','cognitive enhancement','mental performance','brain fog','memory support','concentration','brain health supplement','neuro surge review','neuro surge price','neuro surge buy','neuro surge official','neuro surge ingredients','neuro surge side effects','neuro surge results','neuro surge legit','neuro surge works']
+        },
+        {
+            id: 'glucoextend',
+            name: 'Gluco Extend Blood Sugar',
+            description: 'Natural blood sugar support for healthy glucose levels and energy balance',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/glucoextend.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['gluco extend','blood sugar support','glucose levels','diabetes support','blood sugar supplement','glucose balance','energy balance','blood sugar management','glucose metabolism','diabetes supplement','blood sugar control','glucose support','gluco extend review','gluco extend price','gluco extend buy','gluco extend official','gluco extend ingredients','gluco extend side effects','gluco extend results','gluco extend legit','gluco extend works']
+        },
+        {
+            id: 'ikarialeanbellyjuice',
+            name: 'Ikaria Lean Belly Juice',
+            description: 'Natural weight loss drink for belly fat reduction and metabolism boost',
+            category: 'Health & Supplements',
+            rating: 4.9,
+            url: 'reviews/ikarialeanbellyjuice.html',
+            icon: 'fas fa-fire',
+            keywords: ['ikaria lean belly juice','weight loss drink','belly fat reduction','metabolism boost','weight loss supplement','belly fat','weight management','fat burning','natural weight loss','belly fat loss','metabolism support','weight loss formula','ikaria lean belly juice review','ikaria lean belly juice price','ikaria lean belly juice buy','ikaria lean belly juice official','ikaria lean belly juice ingredients','ikaria lean belly juice side effects','ikaria lean belly juice results','ikaria lean belly juice legit','ikaria lean belly juice works']
+        },
+        {
+            id: 'neuroprime',
+            name: 'Neuro Prime',
+            description: 'Natural brain health support for cognitive function and memory enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/neuroprime.html',
+            icon: 'fas fa-brain',
+            keywords: ['neuro prime','brain health supplement','cognitive function','memory enhancement','brain health','mental clarity','brain fog','cognitive support','memory support','brain supplement','mental performance','brain function','neuro prime review','neuro prime price','neuro prime buy','neuro prime official','neuro prime ingredients','neuro prime side effects','neuro prime results','neuro prime legit','neuro prime works']
         }
     ];
     
