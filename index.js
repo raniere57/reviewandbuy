@@ -489,6 +489,36 @@ function initSearchFunctionality() {
             url: 'reviews/sugardefender.html',
             icon: 'fas fa-heartbeat',
             keywords: ['sugar defender','blood sugar','glucose support','insulin sensitivity','energy','cravings control','daily balance','natural formula']
+        },
+        {
+            id: 'igenics',
+            name: 'Igenics Eye Health',
+            description: 'Natural eye health support for vision clarity and ocular wellness',
+            category: 'Health & Supplements',
+            rating: 4.7,
+            url: 'reviews/igenics.html',
+            icon: 'fas fa-eye',
+            keywords: ['igenics','eye health','vision support','ocular wellness','eye strain','digital eye strain','vision clarity','eye supplements','lutein','zeaxanthin']
+        },
+        {
+            id: 'nagano-tonic',
+            name: 'Nagano Tonic Weight Loss',
+            description: 'Natural weight loss support for metabolism and fat burning',
+            category: 'Health & Supplements',
+            rating: 4.6,
+            url: 'reviews/nagano-tonic.html',
+            icon: 'fas fa-fire',
+            keywords: ['nagano tonic','weight loss','metabolism booster','fat burning','natural weight loss','weight management','metabolic support','fat loss','diet supplement','weight loss formula']
+        },
+        {
+            id: 'livpure',
+            name: 'Liv Pure Weight Loss',
+            description: 'Natural weight loss support for liver health and fat burning',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/livpure.html',
+            icon: 'fas fa-leaf',
+            keywords: ['liv pure','weight loss','liver health','fat burning','natural weight loss','liver support','weight management','liver function','fat loss','liver detox','weight loss formula']
         }
     ];
     
