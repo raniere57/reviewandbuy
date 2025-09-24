@@ -609,6 +609,26 @@ function initSearchFunctionality() {
             url: 'reviews/renew.html',
             icon: 'fas fa-leaf',
             keywords: ['renew','renew supplement','wellness support','energy balance','metabolism support','daily wellness','natural supplement','renew review','renew price','renew buy','renew official','renew ingredients','renew side effects','renew results','renew legit','renew works']
+        },
+        {
+            id: 'maxboostplus',
+            name: 'Max Boost Plus',
+            description: 'Natural male enhancement support for performance, energy and vitality',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/maxboostplus.html',
+            icon: 'fas fa-bolt',
+            keywords: ['max boost plus','male enhancement','male performance','energy support','vitality support','male health','performance support','max boost plus review','max boost plus price','max boost plus buy','max boost plus official','max boost plus ingredients','max boost plus side effects','max boost plus results','max boost plus legit','max boost plus works']
+        },
+        {
+            id: 'biovanish',
+            name: 'BioVanish',
+            description: 'Natural weight loss support for metabolism and fat burning',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/biovanish.html',
+            icon: 'fas fa-fire',
+            keywords: ['biovanish','weight loss','fat burning','metabolism support','weight management','natural weight loss','biovanish review','biovanish price','biovanish buy','biovanish official','biovanish ingredients','biovanish side effects','biovanish results','biovanish legit','biovanish works']
         }
     ];
     
