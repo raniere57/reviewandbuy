@@ -629,6 +629,16 @@ function initSearchFunctionality() {
             url: 'reviews/biovanish.html',
             icon: 'fas fa-fire',
             keywords: ['biovanish','weight loss','fat burning','metabolism support','weight management','natural weight loss','biovanish review','biovanish price','biovanish buy','biovanish official','biovanish ingredients','biovanish side effects','biovanish results','biovanish legit','biovanish works']
+        },
+        {
+            id: 'jointvive',
+            name: 'JointVive',
+            description: 'Natural joint health support for mobility and flexibility',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/jointvive.html',
+            icon: 'fas fa-bone',
+            keywords: ['jointvive','joint health','joint mobility','joint flexibility','joint pain relief','joint comfort','joint support','jointvive review','jointvive price','jointvive buy','jointvive official','jointvive ingredients','jointvive side effects','jointvive results','jointvive legit','jointvive works']
         }
     ];
     
