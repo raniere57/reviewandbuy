@@ -659,6 +659,16 @@ function initSearchFunctionality() {
             url: 'reviews/zencortex.html',
             icon: 'fas fa-ear-listen',
             keywords: ['zencortex','hearing health','ear health','auditory support','hearing support','zencortex review','zencortex price','zencortex buy','zencortex official','zencortex ingredients','zencortex side effects','zencortex results','zencortex legit','zencortex works']
+        },
+        {
+            id: 'titanflow',
+            name: 'TitanFlow',
+            description: 'Natural male enhancement support for performance and vitality',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/titanflow.html',
+            icon: 'fas fa-bolt',
+            keywords: ['titanflow','male enhancement','male performance','male vitality','titanflow review','titanflow price','titanflow buy','titanflow official','titanflow ingredients','titanflow side effects','titanflow results','titanflow legit','titanflow works']
         }
     ];
     
