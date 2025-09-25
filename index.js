@@ -639,6 +639,26 @@ function initSearchFunctionality() {
             url: 'reviews/jointvive.html',
             icon: 'fas fa-bone',
             keywords: ['jointvive','joint health','joint mobility','joint flexibility','joint pain relief','joint comfort','joint support','jointvive review','jointvive price','jointvive buy','jointvive official','jointvive ingredients','jointvive side effects','jointvive results','jointvive legit','jointvive works']
+        },
+        {
+            id: 'glucoberry',
+            name: 'GlucoBerry',
+            description: 'Natural blood sugar support for glucose balance and management',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/glucoberry.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['glucoberry','blood sugar support','glucose balance','blood sugar management','natural blood sugar','glucoberry review','glucoberry price','glucoberry buy','glucoberry official','glucoberry ingredients','glucoberry side effects','glucoberry results','glucoberry legit','glucoberry works']
+        },
+        {
+            id: 'zencortex',
+            name: 'ZenCortex',
+            description: 'Natural hearing health support for ear function and auditory wellness',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/zencortex.html',
+            icon: 'fas fa-ear-listen',
+            keywords: ['zencortex','hearing health','ear health','auditory support','hearing support','zencortex review','zencortex price','zencortex buy','zencortex official','zencortex ingredients','zencortex side effects','zencortex results','zencortex legit','zencortex works']
         }
     ];
     
