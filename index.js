@@ -301,6 +301,36 @@ function initSearchFunctionality() {
             keywords: ['moringa', 'supplement', 'organic', 'energy', 'health', 'wellness', 'superfood', 'pure moringa powder', 'moringa supplement', 'moringa review', 'moringa pills', 'moringa for energy', 'moringa health', 'moringa extract', 'moringa leaves', 'moringa detox', 'moringa tea review', 'moringa uses', 'moringa plant', 'what is moringa', 'moringa leaf', 'how to use moringa', 'moringa drink', 'moringa juice', 'moringa powder benefits', 'pure moringa capsules', 'organic moringa supplements', 'best moringa brand', 'superfood supplements', 'moringa benefits for skin', 'moringa oleifera powder', 'where to buy moringa', 'moringa and weight loss', 'natural energy boost', 'how to boost immune system', 'anti-aging superfoods', 'healthy skin tips', 'how to feel more energetic', 'daily wellness routine', 'natural dietary supplements', 'best way to get vitamins', 'natural anti-inflammatory', 'gut health supplements', 'immune system support', 'anti-aging properties', 'natural source of vitamins', 'boost your daily nutrition', 'superfood for overall health', 'daily wellness boost', 'improve skin radiance', 'detox your body naturally', '#Moringa', '#MoringaBenefits', '#Superfood', '#Wellness', '#HealthyLiving', '#NaturalHealth', '#OrganicSupplements', '#Nutrition', '#HealthIsWealth', '#ImmuneSupport', '#AntiAging', '#HolisticHealth', '#MDRNRemedy']
         },
         {
+            id: 'glucotrust',
+            name: 'GlucoTrust',
+            description: 'Natural blood sugar support for glucose balance and management',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/glucotrust.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['glucotrust','gluco trust','blood sugar support','glucose balance','blood sugar management','natural blood sugar','glucotrust review','glucotrust price','glucotrust buy','glucotrust official','glucotrust ingredients','glucotrust side effects','glucotrust results','glucotrust legit','glucotrust works']
+        },
+        {
+            id: 'prostapeak',
+            name: 'Prosta Peak',
+            description: 'Natural prostate health support for urinary function and wellness',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/prostapeak.html',
+            icon: 'fas fa-male',
+            keywords: ['prosta peak','prostapeak','prostapeak review','prostate health support','urinary function','prostate wellness','natural prostate','prostapeak price','prostapeak buy','prostapeak official','prostapeak ingredients','prostapeak side effects','prostapeak results','prostapeak legit','prostapeak works']
+        },
+        {
+            id: 'menorescue',
+            name: 'MenoRescue',
+            description: 'Natural menopause support for hormonal balance and symptom relief',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/menorescue.html',
+            icon: 'fas fa-heart',
+            keywords: ['menorescue','meno rescue','menorescue review','menopause support','hormonal balance','menopause symptoms','natural menopause','menorescue price','menorescue buy','menorescue official','menorescue ingredients','menorescue side effects','menorescue results','menorescue legit','menorescue works']
+        },
+        {
             id: 'mitolyn',
             name: 'Mitolyn Weight Loss',
             description: 'Revolutionary mitochondrial support supplement for natural weight loss and energy boost',
