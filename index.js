@@ -669,6 +669,16 @@ function initSearchFunctionality() {
             url: 'reviews/titanflow.html',
             icon: 'fas fa-bolt',
             keywords: ['titanflow','male enhancement','male performance','male vitality','titanflow review','titanflow price','titanflow buy','titanflow official','titanflow ingredients','titanflow side effects','titanflow results','titanflow legit','titanflow works']
+        },
+        {
+            id: 'nervefresh',
+            name: 'Nerve Fresh',
+            description: 'Natural nerve health support for neuropathy relief and nerve function',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/nervefresh.html',
+            icon: 'fas fa-brain',
+            keywords: ['nerve fresh','nerve health','neuropathy relief','nerve function','nerve fresh review','nerve fresh price','nerve fresh buy','nerve fresh official','nerve fresh ingredients','nerve fresh side effects','nerve fresh results','nerve fresh legit','nerve fresh works']
         }
     ];
     
