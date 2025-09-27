@@ -331,6 +331,26 @@ function initSearchFunctionality() {
             keywords: ['menorescue','meno rescue','menorescue review','menopause support','hormonal balance','menopause symptoms','natural menopause','menorescue price','menorescue buy','menorescue official','menorescue ingredients','menorescue side effects','menorescue results','menorescue legit','menorescue works']
         },
         {
+            id: 'cellucare',
+            name: 'CelluCare',
+            description: 'Natural cellulite support for skin health and body confidence',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/cellucare.html',
+            icon: 'fas fa-sparkles',
+            keywords: ['cellucare','cellu care','cellucare review','cellulite support','skin health','cellulite reduction','natural cellulite','cellucare price','cellucare buy','cellucare official','cellucare ingredients','cellucare side effects','cellucare results','cellucare legit','cellucare works']
+        },
+        {
+            id: 'cognicarepro',
+            name: 'Cognicare Pro',
+            description: 'Natural brain health support for cognitive function and memory enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/cognicarepro.html',
+            icon: 'fas fa-brain',
+            keywords: ['cognicare pro','cognicarepro','cognicare pro review','brain health support','cognitive function','memory enhancement','brain supplements','cognicare pro price','cognicare pro buy','cognicare pro official','cognicare pro ingredients','cognicare pro side effects','cognicare pro results','cognicare pro legit','cognicare pro works']
+        },
+        {
             id: 'mitolyn',
             name: 'Mitolyn Weight Loss',
             description: 'Revolutionary mitochondrial support supplement for natural weight loss and energy boost',
