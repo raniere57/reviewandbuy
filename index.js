@@ -955,3 +955,141 @@ function showNotification(message, type = 'info') {
         }, 300);
     }, 4000);
 }
+
+// Pagination System
+let currentPage = 1;
+const reviewsPerPage = 10;
+let allReviewCards = [];
+
+function initPagination() {
+    // Get all review cards
+    allReviewCards = Array.from(document.querySelectorAll('.review-card'));
+    
+    // Update total count
+    const totalReviews = allReviewCards.length;
+    document.querySelector('.total-reviews').textContent = totalReviews;
+    
+    // Generate pagination
+    generatePagination();
+    
+    // Generate page selector
+    generatePageSelector();
+    
+    // Show first page
+    showPage(1);
+}
+
+function generatePagination() {
+    const totalPages = Math.ceil(allReviewCards.length / reviewsPerPage);
+    const paginationNumbers = document.querySelector('.pagination-numbers');
+    
+    // Clear existing numbers
+    paginationNumbers.innerHTML = '';
+    
+    // Generate page numbers
+    for (let i = 1; i <= totalPages; i++) {
+        const pageNumber = document.createElement('button');
+        pageNumber.className = 'pagination-number';
+        pageNumber.textContent = i;
+        pageNumber.addEventListener('click', () => goToPage(i));
+        paginationNumbers.appendChild(pageNumber);
+    }
+    
+    // Update button states
+    updatePaginationButtons(totalPages);
+}
+
+function generatePageSelector() {
+    const totalPages = Math.ceil(allReviewCards.length / reviewsPerPage);
+    const pageSelect = document.querySelector('#page-select');
+    
+    // Clear existing options
+    pageSelect.innerHTML = '';
+    
+    // Generate page options
+    for (let i = 1; i <= totalPages; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = `Page ${i}`;
+        pageSelect.appendChild(option);
+    }
+    
+    // Add event listener
+    pageSelect.addEventListener('change', function() {
+        const selectedPage = parseInt(this.value);
+        if (selectedPage && selectedPage !== currentPage) {
+            goToPage(selectedPage);
+        }
+    });
+}
+
+function showPage(page) {
+    const startIndex = (page - 1) * reviewsPerPage;
+    const endIndex = startIndex + reviewsPerPage;
+    
+    // Hide all cards
+    allReviewCards.forEach(card => {
+        card.classList.remove('visible');
+    });
+    
+    // Show cards for current page
+    for (let i = startIndex; i < endIndex && i < allReviewCards.length; i++) {
+        allReviewCards[i].classList.add('visible');
+    }
+    
+    // Update pagination info
+    const start = startIndex + 1;
+    const end = Math.min(endIndex, allReviewCards.length);
+    document.querySelector('.current-range').textContent = `${start}-${end}`;
+    
+    // Update active page number
+    document.querySelectorAll('.pagination-number').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    document.querySelectorAll('.pagination-number')[page - 1]?.classList.add('active');
+    
+    // Update page selector
+    const pageSelect = document.querySelector('#page-select');
+    if (pageSelect) {
+        pageSelect.value = page;
+    }
+    
+    // Scroll to reviews section
+    document.querySelector('#reviews').scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+    });
+}
+
+function goToPage(page) {
+    currentPage = page;
+    showPage(page);
+    updatePaginationButtons(Math.ceil(allReviewCards.length / reviewsPerPage));
+}
+
+function updatePaginationButtons(totalPages) {
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+    
+    // Add event listeners
+    prevBtn.onclick = () => {
+        if (currentPage > 1) {
+            goToPage(currentPage - 1);
+        }
+    };
+    
+    nextBtn.onclick = () => {
+        if (currentPage < totalPages) {
+            goToPage(currentPage + 1);
+        }
+    };
+}
+
+// Initialize pagination when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for all content to load
+    setTimeout(initPagination, 100);
+});
