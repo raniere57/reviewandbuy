@@ -759,6 +759,16 @@ function initSearchFunctionality() {
             url: 'reviews/myenergeia.html',
             icon: 'fas fa-bolt',
             keywords: ['my energeia','energy support','vitality enhancement','stamina boost','natural energy','my energeia review','my energeia price','my energeia buy','my energeia official','my energeia ingredients','my energeia side effects','my energeia results','my energeia legit','my energeia works']
+        },
+        {
+            id: 'metanail',
+            name: 'Metanail Nail Health',
+            description: 'Natural nail health support formula for stronger nails and nail growth',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/metanail.html',
+            icon: 'fas fa-hand-paper',
+            keywords: ['metanail','nail health','nail growth','stronger nails','nail support','metanail review','metanail price','metanail buy','metanail official','metanail ingredients','metanail side effects','metanail results','metanail legit','metanail works']
         }
     ];
     
