@@ -351,6 +351,16 @@ function initSearchFunctionality() {
             keywords: ['cognicare pro','cognicarepro','cognicare pro review','brain health support','cognitive function','memory enhancement','brain supplements','cognicare pro price','cognicare pro buy','cognicare pro official','cognicare pro ingredients','cognicare pro side effects','cognicare pro results','cognicare pro legit','cognicare pro works']
         },
         {
+            id: 'javabrain',
+            name: 'Java Brain',
+            description: 'Natural cognitive enhancement and brain function support for mental clarity',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/javabrain.html',
+            icon: 'fas fa-coffee',
+            keywords: ['java brain','javabrain','java brain review','cognitive enhancement','brain function support','mental clarity','java brain supplement','java brain price','java brain buy','java brain official','java brain ingredients','java brain side effects','java brain results','java brain legit','java brain works']
+        },
+        {
             id: 'mitolyn',
             name: 'Mitolyn Weight Loss',
             description: 'Revolutionary mitochondrial support supplement for natural weight loss and energy boost',
@@ -729,6 +739,26 @@ function initSearchFunctionality() {
             url: 'reviews/nervefresh.html',
             icon: 'fas fa-brain',
             keywords: ['nerve fresh','nerve health','neuropathy relief','nerve function','nerve fresh review','nerve fresh price','nerve fresh buy','nerve fresh official','nerve fresh ingredients','nerve fresh side effects','nerve fresh results','nerve fresh legit','nerve fresh works']
+        },
+        {
+            id: 'sonovive',
+            name: 'SonoVive Sleep Support',
+            description: 'Natural sleep support formula for better rest and sleep quality',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/sonovive.html',
+            icon: 'fas fa-moon',
+            keywords: ['sonovive','sleep support','better sleep','sleep quality','restful nights','natural sleep','sonovive review','sonovive price','sonovive buy','sonovive official','sonovive ingredients','sonovive side effects','sonovive results','sonovive legit','sonovive works']
+        },
+        {
+            id: 'myenergeia',
+            name: 'My Energeia Energy Support',
+            description: 'Natural energy support formula for vitality and stamina enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/myenergeia.html',
+            icon: 'fas fa-bolt',
+            keywords: ['my energeia','energy support','vitality enhancement','stamina boost','natural energy','my energeia review','my energeia price','my energeia buy','my energeia official','my energeia ingredients','my energeia side effects','my energeia results','my energeia legit','my energeia works']
         }
     ];
     
