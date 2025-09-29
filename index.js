@@ -301,6 +301,16 @@ function initSearchFunctionality() {
             keywords: ['moringa', 'supplement', 'organic', 'energy', 'health', 'wellness', 'superfood', 'pure moringa powder', 'moringa supplement', 'moringa review', 'moringa pills', 'moringa for energy', 'moringa health', 'moringa extract', 'moringa leaves', 'moringa detox', 'moringa tea review', 'moringa uses', 'moringa plant', 'what is moringa', 'moringa leaf', 'how to use moringa', 'moringa drink', 'moringa juice', 'moringa powder benefits', 'pure moringa capsules', 'organic moringa supplements', 'best moringa brand', 'superfood supplements', 'moringa benefits for skin', 'moringa oleifera powder', 'where to buy moringa', 'moringa and weight loss', 'natural energy boost', 'how to boost immune system', 'anti-aging superfoods', 'healthy skin tips', 'how to feel more energetic', 'daily wellness routine', 'natural dietary supplements', 'best way to get vitamins', 'natural anti-inflammatory', 'gut health supplements', 'immune system support', 'anti-aging properties', 'natural source of vitamins', 'boost your daily nutrition', 'superfood for overall health', 'daily wellness boost', 'improve skin radiance', 'detox your body naturally', '#Moringa', '#MoringaBenefits', '#Superfood', '#Wellness', '#HealthyLiving', '#NaturalHealth', '#OrganicSupplements', '#Nutrition', '#HealthIsWealth', '#ImmuneSupport', '#AntiAging', '#HolisticHealth', '#MDRNRemedy']
         },
         {
+            id: 'mensgrowth',
+            name: 'Men’s Growth',
+            description: 'Natural male enhancement support for performance, stamina and vitality',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/mensgrowth.html',
+            icon: 'fas fa-mars',
+            keywords: ['mens growth','men’s growth','male enhancement','male performance','vitality','stamina','mensgrowth review','mensgrowth price','mensgrowth buy','mensgrowth official','mensgrowth ingredients','mensgrowth side effects','mensgrowth results','mensgrowth legit','mensgrowth works']
+        },
+        {
             id: 'glucotrust',
             name: 'GlucoTrust',
             description: 'Natural blood sugar support for glucose balance and management',
