@@ -311,6 +311,16 @@ function initSearchFunctionality() {
             keywords: ['mens growth','men’s growth','male enhancement','male performance','vitality','stamina','mensgrowth review','mensgrowth price','mensgrowth buy','mensgrowth official','mensgrowth ingredients','mensgrowth side effects','mensgrowth results','mensgrowth legit','mensgrowth works']
         },
         {
+            id: 'nervearmor',
+            name: 'Nerve Armor',
+            description: 'Natural nerve support for comfort, calm and daily mobility',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/nervearmor.html',
+            icon: 'fas fa-bolt',
+            keywords: ['nerve armor','nerve support','neuropathy support','nerve comfort','nerve calm','mobility','nerve armor review','nerve armor price','nerve armor buy','nerve armor official','nerve armor ingredients','nerve armor side effects','nerve armor results','nerve armor legit','nerve armor works']
+        },
+        {
             id: 'glucotrust',
             name: 'GlucoTrust',
             description: 'Natural blood sugar support for glucose balance and management',
