@@ -82,7 +82,7 @@ function showExitIntentOffer(){
             <h2>Wait! Don't Miss Out!</h2>
             <p>Get <strong>Men’s Growth</strong> with our <strong>money-back guarantee</strong></p>
             <div class="exit-offer">
-                <span class="exit-price">$59</span>
+                <span class="exit-price">$49</span>
                 <span class="exit-guarantee">Risk-Free + Selected FREE Shipping</span>
             </div>
             <a href="https://857cedjml7-0bz4ejk3evj9r40.hop.clickbank.net" target="_blank" class="exit-cta">Claim Your Discount Now</a>
