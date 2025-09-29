@@ -371,6 +371,16 @@ function initSearchFunctionality() {
             keywords: ['cognicare pro','cognicarepro','cognicare pro review','brain health support','cognitive function','memory enhancement','brain supplements','cognicare pro price','cognicare pro buy','cognicare pro official','cognicare pro ingredients','cognicare pro side effects','cognicare pro results','cognicare pro legit','cognicare pro works']
         },
         {
+            id: 'cognisurge',
+            name: 'CogniSurge Brain Health',
+            description: 'Natural brain health supplement for cognitive function and memory enhancement support with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/cognisurge.html',
+            icon: 'fas fa-brain',
+            keywords: ['cognisurge','cognisurge review','brain health support','cognitive function','memory enhancement','brain supplements','cognisurge price','cognisurge buy','cognisurge official','cognisurge ingredients','cognisurge side effects','cognisurge results','cognisurge legit','cognisurge works']
+        },
+        {
             id: 'javabrain',
             name: 'Java Brain',
             description: 'Natural cognitive enhancement and brain function support for mental clarity',
