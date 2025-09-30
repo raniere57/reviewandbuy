@@ -381,6 +381,26 @@ function initSearchFunctionality() {
             keywords: ['cognisurge','cognisurge review','brain health support','cognitive function','memory enhancement','brain supplements','cognisurge price','cognisurge buy','cognisurge official','cognisurge ingredients','cognisurge side effects','cognisurge results','cognisurge legit','cognisurge works']
         },
         {
+            id: 'jointn11',
+            name: 'Joint N-11 Joint Health',
+            description: 'Natural joint health supplement for mobility and comfort support with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/jointn11.html',
+            icon: 'fas fa-bone',
+            keywords: ['joint n-11','joint n-11 review','joint health support','joint mobility','joint comfort','joint supplements','joint n-11 price','joint n-11 buy','joint n-11 official','joint n-11 ingredients','joint n-11 side effects','joint n-11 results','joint n-11 legit','joint n-11 works']
+        },
+        {
+            id: 'neurozoom',
+            name: 'NeuroZoom Brain Health',
+            description: 'Natural brain health supplement for cognitive function and memory enhancement support with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/neurozoom.html',
+            icon: 'fas fa-brain',
+            keywords: ['neurozoom','neuro zoom','neurozoom review','brain health support','cognitive function','memory enhancement','brain supplements','neurozoom price','neurozoom buy','neurozoom official','neurozoom ingredients','neurozoom side effects','neurozoom results','neurozoom legit','neurozoom works']
+        },
+        {
             id: 'javabrain',
             name: 'Java Brain',
             description: 'Natural cognitive enhancement and brain function support for mental clarity',
