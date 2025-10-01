@@ -401,6 +401,26 @@ function initSearchFunctionality() {
             keywords: ['neurozoom','neuro zoom','neurozoom review','brain health support','cognitive function','memory enhancement','brain supplements','neurozoom price','neurozoom buy','neurozoom official','neurozoom ingredients','neurozoom side effects','neurozoom results','neurozoom legit','neurozoom works']
         },
         {
+            id: 'glucotonic',
+            name: 'GlucoTonic Blood Sugar',
+            description: 'Natural blood sugar support supplement for glucose balance and management with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/glucotonic.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['glucotonic','gluco tonic','glucotonic review','blood sugar support','glucose balance','blood sugar management','glucotonic price','glucotonic buy','glucotonic official','glucotonic ingredients','glucotonic side effects','glucotonic results','glucotonic legit','glucotonic works']
+        },
+        {
+            id: 'endopeak',
+            name: 'EndoPeak Male Performance',
+            description: 'Natural male performance support for vitality and stamina enhancement with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/endopeak.html',
+            icon: 'fas fa-fire',
+            keywords: ['endopeak','endo peak','endopeak review','male performance support','vitality support','stamina enhancement','endopeak price','endopeak buy','endopeak official','endopeak ingredients','endopeak side effects','endopeak results','endopeak legit','endopeak works']
+        },
+        {
             id: 'javabrain',
             name: 'Java Brain',
             description: 'Natural cognitive enhancement and brain function support for mental clarity',
