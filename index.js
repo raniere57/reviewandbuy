@@ -501,6 +501,16 @@ function initSearchFunctionality() {
             keywords: ['joint restore gummies','jointrestore','joint restore review','joint gummies','joint mobility','knee comfort','joint pain gummies','boswellia','turmeric','joint restore price','joint restore buy','joint restore official','joint restore ingredients','joint restore side effects','joint restore results','joint restore legit','joint restore works']
         },
         {
+            id: 'zeneara',
+            name: 'Zeneara Hearing Health',
+            description: 'Natural hearing health support for ear function and auditory enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/zeneara.html',
+            icon: 'fas fa-ear-listen',
+            keywords: ['zeneara','zeneara review','hearing health supplement','ear function','auditory enhancement','zeneara price','zeneara buy','zeneara official','zeneara ingredients','zeneara side effects','zeneara results','zeneara legit','zeneara works']
+        },
+        {
             id: 'audifort',
             name: 'Audifort Hearing Health',
             description: 'Andrew Ross hearing health supplement with 20+ natural ingredients including Maca Root and Green Tea. Supports healthy hearing and cognitive clarity',
