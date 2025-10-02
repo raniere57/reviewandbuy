@@ -421,6 +421,16 @@ function initSearchFunctionality() {
             keywords: ['endopeak','endo peak','endopeak review','male performance support','vitality support','stamina enhancement','endopeak price','endopeak buy','endopeak official','endopeak ingredients','endopeak side effects','endopeak results','endopeak legit','endopeak works']
         },
         {
+            id: 'sugarmute',
+            name: 'SugarMute Blood Sugar',
+            description: 'Natural blood sugar support for glucose balance and steady energy with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/sugarmute.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['sugarmute','sugar mute','sugarmute review','blood sugar support','glucose balance','steady energy','sugarmute price','sugarmute buy','sugarmute official','sugarmute ingredients','sugarmute side effects','sugarmute results','sugarmute legit','sugarmute works']
+        },
+        {
             id: 'javabrain',
             name: 'Java Brain',
             description: 'Natural cognitive enhancement and brain function support for mental clarity',
