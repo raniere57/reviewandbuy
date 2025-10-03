@@ -1,15 +1,15 @@
-// TC24 Review Specific JavaScript
+// Critical T Review Specific JavaScript
 
 (function initEntrypoint(){
     const init = () => {
         initProgressBars();
         initTimelineAnimations();
         initRatingAnimations(4.8);
-        initVideoSection('TC24 Testosterone Support Review Video');
+        initVideoSection('Critical T Testosterone Support Review Video');
         initConversionTracking();
         initHeaderButton();
         initMobileMenu();
-        loadRelatedReviews('tc24');
+        loadRelatedReviews('criticalt');
     };
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
@@ -70,7 +70,7 @@ function initConversionTracking(){
 }
 
 function trackAffiliateClick(buttonType, buttonText, position){
-    console.log('Affiliate Click Tracked:', {buttonType,buttonText,position,product:'TC24',affiliate_link:'https://8c0b2qiju00bc-5hobtg3gupen.hop.clickbank.net',timestamp:new Date().toISOString(),page_url:window.location.href,user_agent:navigator.userAgent});
+    console.log('Affiliate Click Tracked:', {buttonType,buttonText,position,product:'Critical T',affiliate_link:'https://e6a75fgjv-2084ez2dz3oztffi.hop.clickbank.net',timestamp:new Date().toISOString(),page_url:window.location.href,user_agent:navigator.userAgent});
 }
 
 function showExitIntentOffer(){
@@ -80,12 +80,12 @@ function showExitIntentOffer(){
         <div class="exit-modal-content">
             <button class="exit-modal-close">&times;</button>
             <h2>Wait! Don't Miss Out!</h2>
-            <p>Get <strong>TC24</strong> with our <strong>money-back guarantee</strong></p>
+            <p>Get <strong>Critical T</strong> with our <strong>money-back guarantee</strong></p>
             <div class="exit-offer">
-                <span class="exit-price">$49</span>
+                <span class="exit-price">$16.75</span>
                 <span class="exit-guarantee">Risk-Free + Selected FREE Shipping</span>
             </div>
-            <a href="https://8c0b2qiju00bc-5hobtg3gupen.hop.clickbank.net" target="_blank" class="exit-cta">Claim Your Discount Now</a>
+            <a href="https://e6a75fgjv-2084ez2dz3oztffi.hop.clickbank.net" target="_blank" class="exit-cta">Claim Your Discount Now</a>
         </div>
     </div>`;
     const style=document.createElement('style'); style.textContent=`
@@ -117,12 +117,12 @@ function initHeaderButton(){
 
 function loadRelatedReviews(currentId){
     const all=[
+        {id:'tc24',name:'TC24',rating:4.8,description:'Natural testosterone support for male vitality.',url:'./tc24.html',icon:'fas fa-dumbbell'},
         {id:'endopeak',name:'EndoPeak',rating:4.8,description:'Male performance and testosterone support.',url:'./endopeak.html',icon:'fas fa-dumbbell'},
         {id:'mensgrowth',name:"Men's Growth",rating:4.8,description:'Natural male enhancement and growth support.',url:'./mensgrowth.html',icon:'fas fa-male'},
         {id:'prostavive',name:'ProstaVive',rating:4.7,description:'Prostate health support.',url:'./prostavive.html',icon:'fas fa-shield-alt'},
         {id:'mitolyn',name:'Mitolyn',rating:4.5,description:'Cellular energy support.',url:'./mitolyn.html',icon:'fas fa-bolt'},
-        {id:'ignitra',name:'Ignitra',rating:4.8,description:'Natural weight loss support.',url:'./ignitra.html',icon:'fas fa-fire'},
-        {id:'javaburn',name:'JavaBurn',rating:4.5,description:'Coffee metabolism booster.',url:'./javaburn.html',icon:'fas fa-coffee'}
+        {id:'ignitra',name:'Ignitra',rating:4.8,description:'Natural weight loss support.',url:'./ignitra.html',icon:'fas fa-fire'}
     ];
     const related=all.filter(r=>r.id!==currentId).slice(0,3);
     const container=document.getElementById('related-reviews-container'); if(!container) return;

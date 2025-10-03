@@ -531,6 +531,16 @@ function initSearchFunctionality() {
             keywords: ['tc24','tc24 review','testosterone supplement','male vitality','energy support','tc24 price','tc24 buy','tc24 official','tc24 ingredients','tc24 side effects','tc24 results','tc24 legit','tc24 works']
         },
         {
+            id: 'criticalt',
+            name: 'Critical T Testosterone Support',
+            description: 'Natural testosterone support for male performance and vitality enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/criticalt.html',
+            icon: 'fas fa-male',
+            keywords: ['critical t','critical t review','testosterone supplement','male performance','vitality support','critical t price','critical t buy','critical t official','critical t ingredients','critical t side effects','critical t results','critical t legit','critical t works']
+        },
+        {
             id: 'audifort',
             name: 'Audifort Hearing Health',
             description: 'Andrew Ross hearing health supplement with 20+ natural ingredients including Maca Root and Green Tea. Supports healthy hearing and cognitive clarity',
