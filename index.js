@@ -521,6 +521,16 @@ function initSearchFunctionality() {
             keywords: ['ignitra','ignitra review','weight loss supplement','metabolism support','fat burning','ignitra price','ignitra buy','ignitra official','ignitra ingredients','ignitra side effects','ignitra results','ignitra legit','ignitra works']
         },
         {
+            id: 'tc24',
+            name: 'TC24 Testosterone Support',
+            description: 'Natural testosterone support for male vitality and energy enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/tc24.html',
+            icon: 'fas fa-dumbbell',
+            keywords: ['tc24','tc24 review','testosterone supplement','male vitality','energy support','tc24 price','tc24 buy','tc24 official','tc24 ingredients','tc24 side effects','tc24 results','tc24 legit','tc24 works']
+        },
+        {
             id: 'audifort',
             name: 'Audifort Hearing Health',
             description: 'Andrew Ross hearing health supplement with 20+ natural ingredients including Maca Root and Green Tea. Supports healthy hearing and cognitive clarity',
