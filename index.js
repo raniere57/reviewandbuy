@@ -511,6 +511,16 @@ function initSearchFunctionality() {
             keywords: ['zeneara','zeneara review','hearing health supplement','ear function','auditory enhancement','zeneara price','zeneara buy','zeneara official','zeneara ingredients','zeneara side effects','zeneara results','zeneara legit','zeneara works']
         },
         {
+            id: 'ignitra',
+            name: 'Ignitra Weight Loss',
+            description: 'Natural weight loss support for metabolism and fat burning enhancement',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/ignitra.html',
+            icon: 'fas fa-fire',
+            keywords: ['ignitra','ignitra review','weight loss supplement','metabolism support','fat burning','ignitra price','ignitra buy','ignitra official','ignitra ingredients','ignitra side effects','ignitra results','ignitra legit','ignitra works']
+        },
+        {
             id: 'audifort',
             name: 'Audifort Hearing Health',
             description: 'Andrew Ross hearing health supplement with 20+ natural ingredients including Maca Root and Green Tea. Supports healthy hearing and cognitive clarity',
