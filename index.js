@@ -421,6 +421,16 @@ function initSearchFunctionality() {
             keywords: ['endopeak','endo peak','endopeak review','male performance support','vitality support','stamina enhancement','endopeak price','endopeak buy','endopeak official','endopeak ingredients','endopeak side effects','endopeak results','endopeak legit','endopeak works']
         },
         {
+            id: 'bpzone',
+            name: 'BPZone Blood Pressure',
+            description: 'Natural blood pressure support for cardiovascular health and circulation with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/bpzone.html',
+            icon: 'fas fa-heartbeat',
+            keywords: ['bpzone','bp zone','bpzone review','blood pressure support','cardiovascular health','circulation support','bpzone price','bpzone buy','bpzone official','bpzone ingredients','bpzone side effects','bpzone results','bpzone legit','bpzone works']
+        },
+        {
             id: 'sugarmute',
             name: 'SugarMute Blood Sugar',
             description: 'Natural blood sugar support for glucose balance and steady energy with money-back guarantee',
