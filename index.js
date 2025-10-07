@@ -431,6 +431,16 @@ function initSearchFunctionality() {
             keywords: ['bpzone','bp zone','bpzone review','blood pressure support','cardiovascular health','circulation support','bpzone price','bpzone buy','bpzone official','bpzone ingredients','bpzone side effects','bpzone results','bpzone legit','bpzone works']
         },
         {
+            id: 'nunerve',
+            name: 'Nu Nerve Nerve Health',
+            description: 'Natural nerve health support for neuropathy relief and function with money-back guarantee',
+            category: 'Health & Supplements',
+            rating: 4.8,
+            url: 'reviews/nunerve.html',
+            icon: 'fas fa-bolt',
+            keywords: ['nu nerve','nunerve','nu nerve review','nerve health support','neuropathy relief','nerve function','nu nerve price','nu nerve buy','nu nerve official','nu nerve ingredients','nu nerve side effects','nu nerve results','nu nerve legit','nu nerve works']
+        },
+        {
             id: 'sugarmute',
             name: 'SugarMute Blood Sugar',
             description: 'Natural blood sugar support for glucose balance and steady energy with money-back guarantee',
