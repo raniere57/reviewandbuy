@@ -54,6 +54,27 @@
           "price": "16.75",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "USD"},
+            "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "US"},
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY"},
+              "transitTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 3, "unitCode": "DAY"},
+              "businessDays": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]},
+              "cutoffTime": "14:00"
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 60,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn",
+            "applicableCountry": "US"
+          },
           "url": "https://e6a75fgjv-2084ez2dz3oztffi.hop.clickbank.net"
         },
         "aggregateRating": {
